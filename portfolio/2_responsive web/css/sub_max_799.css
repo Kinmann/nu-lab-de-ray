@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@media (max-width: 799px){
+    /*************************** BANNER_MAIN ***************************/
+    #banner_main {width: 100%; height: 70vh; background-color: red; background-image: url(../img/sub/banner-bg.jpg); background-size: cover; background-repeat: no-repeat; display: flex; justify-content: flex-start; align-items: center;}
+
+    .banner_main_inner {width: 100%; margin: 0 auto;}
+    .banner_main_text {width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    .banner_main_text h1 {font-size: 35px; background-color: white; color: black; padding: 0 20px; display: inline-block; margin: 0 0 10px;}
+    .banner_main_text h1:last-of-type {margin: 0 0 20px;}
+    .banner_main_text p {width: 70%;font-size: 20px; text-align: center;}
+
+
+
+
+    /*************************** SECTION ***************************/
+    section {width: 100%; margin: 100px auto 120px; display: flex; flex-flow: row wrap; justify-content: space-between;padding: 0 10px;}
+
+
+    /***************** SUB_LEFT *****************/
+    #sub_left {width: 100%; color: black; margin: 0 0 100px;}
+    #sub_left a {color: black;}
+
+    /********** SUB_LEFT_POSTS *********/
+    .left_content_posts {width: 100%; margin: 0 0 130px;}
+    .left_content_main {width: 100%; margin: 0 0 80px;}
+    .left_content_main:last-child {margin: 0;}
+    .left_content_main_img {width: 100%;}
+    .left_content_main_img img {width: 100%; aspect-ratio: 16/9;object-fit: cover; object-position: center; vertical-align: bottom;}
+    .left_content_main_text {width: 100%; display: flex; margin: 30px 0 0; padding: 0 15px;}
+    .left_content_main_text h2 {margin: 0 0 20px;}
+    .left_content_summary {width: 30%; min-width: 170px; padding: 0 0 0 20px;}
+    .left_content_summary li {margin: 0 0 10px;}
+    .left_content_summary img {width: 20px; vertical-align: middle; margin: 0 10px 0 0;}
+
+    .left_content_main_text_inner {width: 70%; }
+
+    .viewMore {font-size: 17px; font-weight: bold; margin: 30px 0 0; display: inline-block; padding: 5px 20px; background-color: blue; border-radius: 40px;border: 2px solid transparent;}
+    .viewMore a {color: white !important;}
+    .viewMore:hover {border: 2px solid blue; background-color: transparent; box-sizing: border-box}
+    .viewMore:hover a {color: blue !important;}
+
+
+    /********** SUB_LEFT_REVIEWS *********/
+    .left_content_reviews {width: 100%; display: flex;justify-content: space-between; flex-flow: row wrap;}
+    .left_content_reviews_left {width: 100%;}
+    .left_content_reviews_right {width: 100%;}
+    .sub_review {width: 100%; margin: 0 0 60px;}
+    .sub_review_img  {width: 100%; margin: 0 0 20px;}
+    .sub_review_img img {width: 100%;}
+    .sub_review_text h1 {margin: 0 0 10px;}
+
+
+
+
+    /***************** SUB_RIGHT *****************/
+    #sub_right {width: 90%; color: black; margin: 0 auto;}
+    #sub_right > div {margin: 0 0 60px;}
+    #sub_right a {color: black;}
+    .sub_right_title {font-weight: 400; margin: 0 0 20px; color: blue;}
+
+    /********** SUB_RIGHT_SEARCH *********/
+    .sub_right_search {width: 100%; height: 50px; border: 1px solid deepskyblue; overflow: hidden; display: flex;}
+    .sub_right_search input {width: 80%; height: 50px; border: none; font-size: 16px; line-height: 50px; padding: 0 20px;}
+    .sub_right_search input:focus {outline: none;}
+    .sub_right_search a {width: 20%; height: 50px; display: flex; justify-content: center; align-items: center;}
+    .sub_right_search img {width: 30px; height: 30px; filter: invert(0.4)}
+
+    /********** SUB_RIGHT_CATEGORIES *********/
+    .sub_right_categories ul li {padding: 10px 0 6px;border-bottom: 1px solid gainsboro;}
+    .sub_right_categories ul li a {font-size: 18px; display: block; padding: 0 0 0 10px;}
+    .sub_right_categories ul li:hover {background-color:rgba(230, 230, 230, 1);}
+
+    /********** SUB_RIGHT_RECENT *********/
+    .sub_right_recent ul li {margin: 0 0 5px;}
+    .sub_right_recent ul li a {display: flex; }
+    .sub_right_recent_img {width: 25%;}
+    .sub_right_recent_img img {width: 100%; aspect-ratio: 1/1; border-radius: 50%; object-fit: cover; object-position: center;}
+    .sub_right_recent_text {width: 70%;display: flex; flex-direction: column; justify-content: center; padding: 0 0 0 20px;}
+    .sub_right_recent_text h3 {margin: 0 0 5px; font-size: 18px;}
+    .sub_right_recent_text p {font-size: 15px;}
+
+    /********** SUB_RIGHT_IMGBANNER *********/
+    .sub_right_imgbanner {width: 100%;}
+    .sub_right_imgbanner img {width: 100%;}
+
+    /********** SUB_RIGHT_INSTAGRAM *********/
+    .sub_right_instagram_img {display: flex; flex-flow: row wrap; justify-content: center; align-items: center; align-content: center;}
+    .sub_right_instagram_img img {width: 30%; aspect-ratio: 1/1; object-fit: cover; object-position: center; margin: 5px;}
+    .sub_right_instagram_img img:hover {cursor: pointer;}
+
+    /********** SUB_RIGHT_SNS *********/
+    .sub_right_sns ul {display: flex; justify-content: space-between;}
+    .sub_right_sns ul li {width: 18%; aspect-ratio: 1/1; background-color: rgba(230, 230, 230, 1); border-radius: 50%; transition: all 0.1s ease-in-out;}
+    .sub_right_sns ul li:hover {background-color: transparent; border: 2px solid gainsboro;}
+    .sub_right_sns ul li a {width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;}
+    .sub_right_sns ul li img {width: 25px; height: 25px; filter:invert(0.3);}
+    .sub_right_sns ul li:hover img {filter:invert(0.5);}
+
+    /********** SUB_RIGHT_TAGS *********/
+    .sub_right_tag_list span {border: 1px solid gainsboro; border-radius: 10px; padding: 6px 12px; margin: 5px; display: inline-block;} 
+    .sub_right_tag_list span:hover {background-color: rgba(230, 230, 230, 1);}
+    .sub_right_tag_list span a {font-size: 14px; font-weight: bold; color: #666 !important;}
+}

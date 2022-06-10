@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@media (min-width : 1250px) {
+    #wrap {width: 100%; overflow: hidden;}
+
+    /********************************** HEADER STARTS **********************************/
+    header {width: 100%; height: 100px; background-color: transparent; padding: 0 5vw; position: fixed; z-index: 2;}
+    nav ul li img {width: 13px; filter: invert(); vertical-align: middle;}
+
+    /****************** HEADER_WIDE STARTS ******************/
+    #header_wide {display: flex; justify-content: space-between; align-items: center;}
+    #header_narrow {display: none;}
+    /******** NAV STARTS ********/
+    #header_wide > nav {width: 70%; min-width: 870px;}
+    #header_wide > nav > ul {display: flex; justify-content : space-evenly; align-items: center;}
+    #header_wide > nav > ul > li {height: 100px; line-height: 100px; margin: 0 12px; position: relative;}
+    #header_wide > nav > ul > li:hover .sub_menu {display: block;}
+    #header_wide > nav > ul > li > a {font-size: 15.5px; font-weight: bold;}
+    #header_wide > nav > ul > li > a:hover {color: gold;}
+    #header_wide .sub_menu {width: 200px; position: absolute; top: 99px; left: -15px; padding: 20px 0 0 0; display: none; z-index: 10;}
+    #header_wide .sub_menu::after {box-sizing: border-box; width: 20px; height: 20px; content:""; position: absolute; top: 0; left: 25px; border-top:0px solid transparent; border-left: 10px solid transparent;  border-right: 10px solid transparent; border-bottom: 10px solid white;}
+    #header_wide .sub_menu li {background-color: white; line-height: 40px; height: 40px; padding: 0 0 0 20px;}
+    #header_wide .sub_menu a {font-size: 14px; color: black; display: block;}
+    #header_wide .sub_menu li:hover {background-color: gainsboro;}
+
+    /******** NAV_RIGHT STARTS ********/
+    .nav_right .icon_menu_wide {filter: invert(); width: 40px; vertical-align: middle;}
+    .nav_right .icon_menu_wide:hover {cursor: pointer; }
+    .nav_widget_curtain {width: 100vw; height: 100vh; position: fixed; top:0; right: 0; background-color: rgba(0, 0, 0, 0.3); display: none; transition: all 0.3s ease-in-out;}
+    .nav_widget {width: 20%; height: 100vh; padding: 30px 40px 60px; background-color: white; color: black; display: flex; flex-direction: column; justify-content: space-between; position: absolute; right: -20%;}
+
+    .nav_widget_head {width: 100%; display: flex; justify-content: space-between; align-items: center;}
+    .nav_widget_head h1 {font-size: 25px;}
+    .nav_widget_head img {width: 25px; height: 25px;}
+    .nav_widget_head img:hover {cursor: pointer;}
+
+    .nav_widget ul li {margin: 2vh 0;}
+    .nav_widget ul li a{font-size: 1.2vw; font-weight: bold; color: black; display: block;}
+    .nav_widget ul li a:hover {color: goldenrod;}
+    .nav_widget_sns {padding: 30px 0 0; display: flex; justify-content: space-between; width: 60%}
+    .nav_widget_sns img {width: 18px;}
+    .nav_widget_sns img:hover {filter:invert(0.5);}
+
+    .nav_widget_search {width: 100%; height: 50px; display: flex; align-items: center; border-bottom: 2px solid red; overflow: hidden; }
+    .nav_widget_search input {width: 80%; height: 50px; padding: 10px; border: none; font-size: 15px;}
+    .nav_widget_search input:focus {outline: none;}
+    .nav_widget_search img {width: 30px; height: 30px; margin: 0 auto;}
+    .nav_widget_search img:hover {filter:invert(0.5); cursor: pointer;}
+
+    /********************************** FOOTER STARTS **********************************/
+    footer {width: 100%; background-color: black;}
+
+    .footer_top {max-width: 1250px; margin: 0 auto; padding: 150px 0; display: flex; justify-content: space-between; align-items: flex-start; }
+    .footer_top_left {width: 50%; padding: 0 50px 0 0;}
+    .footer_top_left > p {margin: 0 0 20px;}
+    .footer_logo {margin: 0 0 20px; }
+    .footer_contact {margin: 0 0 20px;}
+    .footer_sns img {width: 18px; filter:invert(); margin: 0 10px 0 0;}
+    .footer_sns img:hover {filter:invert(0.5);}
+
+    .footer_sns_activity {width: 40%;}
+    .footer_sns_activity h4 {font-size: 25px; margin: 0 0 20px; padding: 0 0 0 10px; }
+    .footer_insta_content {width: 100%; display: flex; flex-flow: row wrap; justify-content: center;}
+    .footer_insta_content img {width: 23%; margin: 1%;}
+    .footer_insta_content img:hover {cursor: pointer; opacity: 0.7;}
+
+    .footer_bottom {text-align: center; height: 50px; line-height: 50px;border-top: 1px solid gray;}
+}

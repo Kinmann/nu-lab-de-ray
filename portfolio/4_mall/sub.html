@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PriceClub</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="upper_nav">
+            <div id="upper_nav_left">
+                <ul>
+                    <li id="center">C/S CENTER <span>1688-8292</span></li>
+                    <li id="community">
+                        <a href="#"><img src="img/top_r_menu_icon_01_b.png" alt="menu_icon">COMMUNITY</a>
+                        <ul>
+                            <li><a href="#">이벤트/체험단</a></li>
+                            <li><a href="#">1:1 문의</a></li>
+                            <li><a href="#">구매후기</a></li>
+                            <li><a href="#">도매/입점문의</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">시스템공지</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">네이버스토어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div id="upper_nav_logo"><a href="main.html"><img src="img/logo.png" alt="main_logo"></a></div>
+            <div id="upper_nav_login">
+                <ul>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">ORDER</a></li>
+                    <li><a href="#">MY PAGE</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">BEST 50</a></li>
+                <li><a href="#">NEW & RESTOCK</a></li>
+                <li><a href="#">HOME CAFE</a></li>
+                <li class="menu_selected"><a href="#">KITCHEN</a></li>
+                <li><a href="#">TABLE</a></li>
+                <li><a href="#">HOUSE</a></li>
+                <li><a href="#">BEAUTY&HEALTH</a></li>
+                <li><a href="#">BABY</a></li>
+                <li><a href="#">FABRIC</a></li>
+                <li><a href="#">FOOD</a></li>
+            </ul>
+            <div id="nav_right">
+                <div class="nav_icon"><a href="#"><img src="img/shopping-cart-3041.png" alt="cart"></a></div>
+                <div class="nav_icon"><a href="#"><img src="img/icon_search.png" alt="search"></a></div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section>
+        <!------Detail_upper_img----->
+        <div id="prdt_intro">
+            <div id="img">
+                <script>
+                    $(document).ready(function() {
+                        $("#img_list li:nth-of-type(1)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_1.jpg");
+                        });
+                        $("#img_list li:nth-of-type(2)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_2.jpg");
+                        });
+                        $("#img_list li:nth-of-type(3)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_3.jpg");
+                        });
+                        $("#img_list li:nth-of-type(4)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_4.jpg");
+                        });
+                        $("#img_list li:nth-of-type(5)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_5.jpg");
+                        });
+                        $("#img_list li:nth-of-type(6)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_6.jpg");
+                        });
+                        $("#img_list li:nth-of-type(7)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_7.jpg");
+                        });
+                        $("#img_list li:nth-of-type(8)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_8.jpg");
+                        });
+                        $("#img_list li:nth-of-type(9)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_9.jpg");
+                        });
+                        $("#img_list li:nth-of-type(10)").hover(function() {
+                            $("#img_detail_img").attr("src", "img/sub/prdt_detail_10.jpg");
+                        });
+                    });
+                </script>
+                <div id="img_list">
+                    <ul>
+                        <li><img src="img/sub/prdt_list_1.jpg" alt="prdt_list_1"></li>
+                        <li><img src="img/sub/prdt_list_2.jpg" alt="prdt_list_2"></li>
+                        <li><img src="img/sub/prdt_list_3.jpg" alt="prdt_list_3"></li>
+                        <li><img src="img/sub/prdt_list_4.jpg" alt="prdt_list_4"></li>
+                        <li><img src="img/sub/prdt_list_5.jpg" alt="prdt_list_5"></li>
+                        <li><img src="img/sub/prdt_list_6.jpg" alt="prdt_list_6"></li>
+                        <li><img src="img/sub/prdt_list_7.jpg" alt="prdt_list_7"></li>
+                        <li><img src="img/sub/prdt_list_8.jpg" alt="prdt_list_8"></li>
+                        <li><img src="img/sub/prdt_list_9.jpg" alt="prdt_list_9"></li>
+                        <li><img src="img/sub/prdt_list_10.jpg" alt="prdt_list_10"></li>
+                    </ul>
+                </div>
+                <div id="img_detail">
+                    <img id="img_detail_img" src="img/sub/prdt_detail_1.jpg" alt="img_detail_1">
+                </div>
+            </div>
+
+            <!-----Detail_upper info----->
+            <div id="info">
+                <div id="info_title">
+                    <div class="sale">24%</div>
+                    <h1>[휴바트] 이지레스트 아카시아 스트레이너(채망, 채반)</h1>
+                </div>
+                <div id="info_detail">
+                    <ul>
+                        <li>
+                            <p>냄비 걸침은 기본! 채망이 바닥에 닿지 않아 위생적이고 우드 손잡이로 비주얼까지 완성!</p>
+                        </li>
+                        <li><span class="price">22,000원</span></li>
+                        <li><span class="sale">16,800원</span></li>
+                        <li>
+                            <span class="title">CODE</span>
+                            <span class="content">P0000LKI</span>
+                        </li>
+                        <li>
+                            <span class="title">SAVE</span>
+                            <span class="content">170원</span>
+                        </li>
+                        <li>
+                            <span class="title">BRAND</span>
+                            <span class="content">휴바트</span>
+                        </li>
+                        <li>
+                            <span class="title">ORIGIN</span>
+                            <span class="content">중국 OEM</span>
+                        </li>
+                    </ul>
+                    <table>
+                        <tr>
+                            <th>옵션</th>
+                            <td>
+                                <select id="select">
+                                    <option>- [필수] 옵션을 선택해 주세요 -</option>
+                                    <option disabled>----------------------------</option>
+                                    <optgroup label="옵션">
+                                        <option value="16800">16cm</option>
+                                        <option value="18800">20cm (+2,000원)</option>
+                                        <option value="21800">24cm (+5,000원)</option>
+                                        <option value="32800">16cm+20cm (+16,000원)</option>
+                                        <option value="36800">20cm+24cm (+20,000원)</option>
+                                        <option value="48800">16cm+20cm+24cm (+32,000원)</option>
+                                    </optgroup>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div id="total_prdt">
+                        <table id="total_prdt_table">
+                            <colgroup>
+                                <col width="250px">
+                                <col width="90px">
+                                <col width="100px">
+                            </colgroup>
+                            <tr>
+                                <td>
+                                    <p class="prdt_title">[휴바트] 이지레스트 아카시아 스트레이너(채망, 채반)</p>
+                                    -
+                                    <span class="prdt_option">16cm</span>
+                                </td>
+                                <td>
+                                    <span class="prdt_qty">
+                                        <input class="qty_level" type="text" value="1">
+                                        <a class="qty_button_up" href="#none"><img src="img/sub/btn_count_up.gif" alt="btn_up"></a>
+                                        <a class="qty_button_down" href="#none"><img src="img/sub/btn_count_down.gif" alt="btn_down"></a>
+                                    </span>
+                                    <a class="prdt_delete_button" href=""><img src="img/sub/btn_price_delete.gif" alt="btn_delete"></a>
+                                </td>
+                                <td>
+                                    <span class="prdt_price"></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <script>
+                            var prdt_price = $(".select option:selected").val();
+                            $(document).ready(function() {
+                                $(".qty_button_up").click(function() {
+                                    $(".qty_level").val(parseInt($(".qty_level").val()) + 1);
+                                    $(".prdt_price").text($(".qty_level").val() * prdt_price);
+                                });
+                                $(".qty_button_down").click(function() {
+                                    if ($(".qty_level").val() < 2) {
+                                        alert("최소 구매수량은 1입니다.");
+                                        $(".qty_level").val(1);
+                                    } else {
+                                        $(".qty_level").val(parseInt($(".qty_level").val()) - 1);
+                                    }
+                                });
+                            });
+                        </script>
+                        <script>
+                            $("#select").change(function(){
+                                $(".prdt_price").text($(this).val() * $(".qty_level").val()+"원");
+                            });
+                        </script>
+                    </div>
+                    <div id="total_price">
+                        Total : <strong id="price">0원</strong> (<span id="qty">0</span>개)
+                    </div>
+                    <script>
+                        $(document).ready(function() {
+                            $("#select").change(function() {
+                                $("#price").text($(this).val()+"원");
+                            });
+                        });
+                    </script>
+                    <div id="buttons">
+                        <a href="#" class="button_buy">구매하기</a>
+                        <a href="#" class="button_cart">장바구니</a>
+                        <a href="#" class="button_interest">관심상품</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----Product_detail----->
+        <div id="prdt_detail">
+            <div id="detail_menu">
+                <ul id="menu_info" class="detail_menu">
+                    <li class="selected"><a href="#menu_info">상품정보</a></li>
+                    <li><a href="#menu_related">관련상품</a></li>
+                    <li><a href="#menu_review">상품후기</a></li>
+                    <li><a href="#menu_inquiry">상품문의</a></li>
+                    <li><a href="#menu_purchase">구매정보</a></li>
+                </ul>
+            </div>
+            <div id="detail_info">
+                <img src="img/sub/description2.jpg" alt="prdt_detail">
+            </div>
+            <div id="detail_menu">
+                <ul id="menu_related" class="detail_menu">
+                    <li><a href="#menu_info">상품정보</a></li>
+                    <li class="selected"><a href="#menu_related">관련상품</a></li>
+                    <li><a href="#menu_review">상품후기</a></li>
+                    <li><a href="#menu_inquiry">상품문의</a></li>
+                    <li><a href="#menu_purchase">구매정보</a></li>
+                </ul>
+            </div>
+
+            <h2 class="title">+이 상품과 관련된 상품</h2>
+            <div id="detail_related">
+                <div class="related_box">
+                    <a href="#">
+                        <img src="img/sub/related/related_1.jpg" alt="related_1">
+                        <p> 마리슈타이거 잡곡통 쌀통 식재료 보관통 냉장고 정리 용기</p>
+                        <span>8,800원</span>
+                    </a>
+                </div>
+                <div class="related_box">
+                    <a href="#">
+                        <img src="img/sub/related/related_2.jpg" alt="related_2">
+                        <p> 프라우반 라운드 가죽 식탁테이블매트 양면 투톤 리사이클 레더</p>
+                        <span>15,800원</span>
+                    </a>
+                </div>
+                <div class="related_box">
+                    <a href="#">
+                        <img src="img/sub/related/related_3.jpg" alt="related_3">
+                        <p> [프라우반] 레더라이크 가죽테이블매트 방수식탁매트 더블칼라</p>
+                        <span>8,800원</span>
+                    </a>
+                </div>
+                <div class="related_box">
+                    <a href="#">
+                        <img src="img/sub/related/related_4.jpg" alt="related_4">
+                        <p> 휴바트 와이드 실리콘 드라잉 매트</p>
+                        <span>12,800원</span>
+                    </a>
+                </div>
+                <div class="related_box">
+                    <a href="#">
+                        <img src="img/sub/related/related_5.jpg" alt="related_5">
+                        <p> 휴바트 큐비콘 V2 실리콘 냄비받침 컵받침 냄비손잡이</p>
+                        <span>4,500원</span>
+                    </a>
+                </div>
+            </div>
+
+            <div id="detail_menu">
+                <ul id="menu_review" class="detail_menu">
+                    <li><a href="#menu_info">상품정보</a></li>
+                    <li><a href="#menu_related">관련상품</a></li>
+                    <li class="selected"><a href="#menu_review">상품후기</a></li>
+                    <li><a href="#menu_inquiry">상품문의</a></li>
+                    <li><a href="#menu_purchase">구매정보</a></li>
+                </ul>
+            </div>
+            <div id="detail_review">
+                <h2 class="title">REVIEWS</h2>
+                <div id="review_upper">
+                    <div id="review_upper_left">
+                        <div id="review_avrstars">
+                            <span>총 181건</span>
+                            <div id="avrstars_img">
+                                <img src="img/sub/reviews/star.png" alt="avr_stars">
+                                <span>4.6</span>
+                            </div>
+                        </div>
+                        <div id="review_graph">
+                            <div class="graph_box" id="graph_1">
+                                <span class="percent">2.2%</span>
+                                <div class="graph_bar">
+                                    <div class="graph_level"></div>
+                                </div>
+                                <span>1점</span>
+                            </div>
+                            <div class="graph_box" id="graph_2">
+                                <span class="percent">0%</span>
+                                <div class="graph_bar">
+                                    <div class="graph_level"></div>
+                                </div>
+                                <span>2점</span>
+                            </div>
+                            <div class="graph_box" id="graph_3">
+                                <span class="percent">15.5%</span>
+                                <div class="graph_bar">
+                                    <div class="graph_level"></div>
+                                </div>
+                                <span>3점</span>
+                            </div>
+                            <div class="graph_box" id="graph_4">
+                                <span class="percent">3.3%</span>
+                                <div class="graph_bar">
+                                    <div class="graph_level"></div>
+                                </div>
+                                <span>4점</span>
+                            </div>
+                            <div class="graph_box" id="graph_5">
+                                <span class="percent">79%</span>
+                                <div class="graph_bar">
+                                    <div class="graph_level"></div>
+                                </div>
+                                <span>5점</span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="review_upper_right">
+                        <h4>BEST REVIEWS</h4>
+                        <div id="review_slide">
+                            <div class="review_slide_con">
+                                <div class="slide_con_img">
+                                    <img src="img/sub/reviews/review_slide_img_1.jpg" alt="review_slide_img_1">
+                                </div>
+                                <div class="slide_con_text">
+                                    <div class="stars">
+                                        <table>
+                                            <tr>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <h5>깔끔.탄탄</h5>
+                                    <p>고급스럽고 깔끔.단단해서 마음에 듭니다. 고맙습니다.</p>
+                                    <span>김**</span>
+                                </div>
+                            </div>
+                            <div class="review_slide_con">
+                                <div class="slide_con_img">
+                                    <img src="img/sub/reviews/review_slide_img_2.jpg" alt="review_slide_img_2">
+                                </div>
+                                <div class="slide_con_text">
+                                    <div class="stars">
+                                        <table>
+                                            <tr>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                                <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <h5>포장도 꼼꼼하고 엄청 튼튼해 보여요~</h5>
+                                    <p>포장도 꼼꼼하고 엄청 튼튼해 보여요~</p>
+                                    <span class="icon_naverpay"></span><span class="review_name">네이버페이 구매자</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="review_lower">
+                    <ul id="review_sort">
+                        <li><a href="#">최신순</a></li>
+                        <li>|</li>
+                        <li><a href="#">추천순</a></li>
+                    </ul>
+                    <ul id="review_list">
+                        <li>
+                            <div id="review_list_con">
+                                <div class="stars">
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h5>만족</h5>
+                                <p>아주좋은 상품입니다.<br>다음에 또 구매하고 싶어요</p>
+                                <span class="icon_naverpay"></span><span class="review_name">네이버페이 구매자</span>
+                            </div>
+                            <div id="review_list_item">
+                                <span class="date">2021-11-09</span>
+                                <button>추천</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="review_list_con">
+                                <div class="stars">
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <h5>만족</h5>
+                                <p>이쁘고 넘 잘 쓰고 있어요~^^</p>
+                                <span class="icon_naverpay"></span><span class="review_name">네이버페이 구매자</span>
+                            </div>
+                            <div id="review_list_item">
+                                <span class="date">2021-11-09</span>
+                                <button>추천</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="review_list_con">
+                                <div class="stars">
+                                    <table>
+                                        <tr>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                            <td><img src="img/sub/reviews/small_star_1.png" alt="rate_1"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="review_list_img">
+                                    <ul class="review_list_img_detail">
+                                        <li><img src="img/sub/reviews/review_list_img_3_1.jpeg" alt="review_list_img_3_1"></li>
+                                        <li><img src="img/sub/reviews/review_list_img_3_2.jpeg" alt="review_list_img_3_2"></li>
+                                    </ul>
+                                </div>
+                                <h5>제일많이 사용되는 사이즈. 정말 잘살샀다는 생각. 기존에 쓰던것도 좋은 제품이라고 생각했는데 휴바트 요...</h5>
+                                <p>제일많이 사용되는 사이즈.<br>
+                                    정말 잘살샀다는 생각.<br>
+                                    기존에 쓰던것도 좋은 제품이라고 생각했는데 휴바트 요건 위생적이고 튼튼하네요
+                                </p>
+                                <span class="icon_naverpay"></span><span class="review_name">네이버페이 구매자</span>
+                            </div>
+                            <div id="review_list_item">
+                                <span class="date">2021-11-09</span>
+                                <button>추천</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="detail_menu">
+                <ul id="menu_inquiry" class="detail_menu">
+                    <li><a href="#menu_info">상품정보</a></li>
+                    <li><a href="#menu_related">관련상품</a></li>
+                    <li><a href="#menu_review">상품후기</a></li>
+                    <li class="selected"><a href="#menu_inquiry">상품문의</a></li>
+                    <li><a href="#menu_purchase">구매정보</a></li>
+                </ul>
+            </div>
+            <div id="detail_inquiry">
+                <div id="inquiry_header">
+                    <span id="inquiry_title">Q & A</span>
+                    <span id="inquiry_buttons">
+                        <a href="#">WRITE</a>
+                        <a href="#">LIST</a>
+                    </span>
+                </div>
+                <div id="inquiry_table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 70px;">
+                            <col style="width: auto;">
+                            <col style="width: 150px;">
+                            <col style="width: 150px;">
+                        </colgroup>
+                        <tr>
+                            <td>2</td>
+                            <td><a href="#">안녕하세요</a></td>
+                            <td>유예진</td>
+                            <td>2021-10-08 22:34:09</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td><a href="#"><img src="img/sub/inquiry/icon_re.gif" alt="icon_re"><img src="img/sub/inquiry/icon_lock.gif" alt="icon_lock">▶ 고객님의 문의에 답변드립니다.</a></td>
+                            <td>PRICECLUB</td>
+                            <td>2021-10-12 11:40:08</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="inquiry_pageflip">
+                    <a href="#"><img src="img/sub/inquiry/btn_page_first2.gif" alt="btn_first"></a>
+                    <a href="#"><img src="img/sub/inquiry/btn_page_prev2.gif" alt="btn_prev"></a>
+                    <ol>
+                        <li><a href="#">1</a></li>
+                    </ol>
+                    <a href="#"><img src="img/sub/inquiry/btn_page_next2.gif" alt="btn_next"></a>
+                    <a href="#"><img src="img/sub/inquiry/btn_page_last2.gif" alt="btn_last"></a>
+                </div>
+            </div>
+            <div id="detail_menu">
+                <ul id="menu_purchase" class="detail_menu">
+                    <li><a href="#menu_info">상품정보</a></li>
+                    <li><a href="#menu_related">관련상품</a></li>
+                    <li><a href="#menu_review">상품후기</a></li>
+                    <li><a href="#menu_inquiry">상품문의</a></li>
+                    <li class="selected"><a href="#menu_purchase">구매정보</a></li>
+                </ul>
+            </div>
+            <div id="detail_purchase">
+                <div id="purchase_upper">
+                    <div id="payment_info">
+                        <h4 class="exchange_title">상품결제정보</h4>
+                        <p>고액결제의 경우 안전을 위해 카드사에서 확인전화를 드릴 수도 있습니다. 확인과정에서 도난 카드의 사용이나 타인 명의의 주문등 정상적인 주문이 아니라고 판단될 경우 임의로 주문을 보류 또는 취소할 수 있습니다.</p>
+                        <p>무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br>
+                            주문시 입력한 입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금되지 않은 주문은 자동취소 됩니다.</p>
+                    </div>
+                    <div id="logistics_info">
+                        <h4 class="exchange_title">배송정보</h4>
+                        <ul>
+                            <li>배송 방법 : 택배</li>
+                            <li>배송 지역 : 전국지역</li>
+                            <li>배송 비용 : 3,000원</li>
+                            <li>배송 기간 : 2일 ~ 7일</li>
+                            <li>배송 안내 : 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다. 고객님께서 주문하신 상품은 입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="exchange_info">
+                    <h4 class="exchange_title">교환 및 반품정보</h4>
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    <h4>교환 및 반품 주소</h4>
+                                </li>
+                                <li class="exchange_desc">[13217] 경기도 성남시 중원구 갈마치로 215 (상대원동) 금강펜테리움IT타워 B동 504호</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <h4>교환 및 반품이 가능한 경우</h4>
+                                </li>
+                                <li class="exchange_desc">
+                                    상품을 공급 받으신 날로부터 7일이내 <br>단, 가전제품의 경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.
+                                </li>
+                                <li class="exchange_desc">
+                                    공급받으신 상품 및 용역의 내용이 표시, 광고 내용과 다르거나 다르게 이행된 경우에는<br>공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <h4>교환 및 반품이 불가능한 경우</h4>
+                                </li>
+                                <li class="exchange_desc">
+                                    고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우.<br>단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외
+                                </li>
+                                <li class="exchange_desc">
+                                    포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br>(예 : 가전제품, 식품, 음반 등, 단 액정화면이 부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에 따른 반품/교환은 제조사 기준에 따릅니다.)
+                                </li>
+                                <li class="exchange_desc">
+                                    고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우<br>단, 화장품등의 경우 시용제품을 제공한 경우에 한 합니다.
+                                </li>
+                                <li class="exchange_desc">
+                                    시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우
+                                </li>
+                                <li class="exchange_desc">
+                                    복제가 가능한 상품등의 포장을 훼손한 경우<br>(자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div id="footer_upper">
+            <div id="service">
+                <div id="cs">
+                    <h4>C/S</h4>
+                    <span>1688-8292</span>
+                    <p>MON ~ FRI : 10:00 AM ~ 05:00 PM<br>
+                        LUNCH TIME : 12:30 PM ~ 01:30 PM</p>
+                </div>
+                <div id="cs2">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><strong>상호</strong>주식회사 카라한</li>
+                        <li><strong>대표이사</strong>한창민</li>
+                        <li><strong>사업자등록번호</strong>129-81-94303</li>
+                        <li><strong>통신판매업신고</strong>2006-경기성남-0288</li>
+                        <li><strong><a href="#">[사업자정보확인]</a></strong></li>
+                        <li><strong>전화</strong>1688-8292</li>
+                        <li><strong>주소</strong> 경기도 성남시 중원구 상대원동 333-7 금강펜테리움IT타워 13층 A동 1310호</li>
+                        <li><strong>개인정보관리책임자 최양희</strong>(master@carahan.com)</li>
+                    </ul>
+                </div>
+                <div id="cs3">
+                    <h4>BANK</h4>
+                    <ul>
+                        <li>국민은행 676937-01-001984</li>
+                        <li>우리은행 1005-701-168297</li>
+                        <li>농협 221113-55-000805</li>
+                        <li>예금주 (주)카라한</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer_lower">
+            <div id="terms">
+                <div id="terms_upper">
+                    <ul id="certi_box">
+                        <li><a href="#"><img src="img/bn_cafe24.png" #"" alt="cafe24"></a></li>
+                        <li><a href="#"><img src="img/pg_kg.jpg" alt="inisys"></a></li>
+                    </ul>
+                    <span>고객님은 안전거래를 위해 결제시 저희 쇼핑몰에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</span>
+                </div>
+                <div class="box"><a href="#">서비스가입사실확인</a></div>
+                <div class="box2"><a href="#">이용약관</a></div>
+                <div class="box2"><a href="#">개인정보취급방침</a></div>
+                <div class="box2"><a href="#">이용안내</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

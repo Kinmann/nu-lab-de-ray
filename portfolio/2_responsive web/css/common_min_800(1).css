@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+@media (min-width : 800px) and (max-width : 1249px) {
+    #wrap {width: 100%; overflow: hidden;}
+
+    /********************************** HEADER STARTS **********************************/
+    header {width: 100%; height: 100px; background-color: transparent; position: fixed; z-index: 2;}
+
+    /****************** HEADER_NARROW STARTS ******************/
+    #header_narrow {display: flex; justify-content: space-between; align-items: center;}
+    #header_wide {display: none;}
+    
+    /******** LOGO STARTS ********/
+    #header_narrow .logo {width: 100%; padding: 0 20px; display: flex; flex-direction: row-reverse; justify-content: space-between; }
+    #header_narrow .logo img[alt="menu_narrow"] {filter:invert(); width: 30px;}
+    #header_narrow .icon_menu_narrow:hover {cursor: pointer;}
+    
+    /******** NAV_LEFT STARTS ********/
+    .nav_left .nav_widget_curtain {width: 100vw; height: 100vh; position: fixed; top:0; right: 0; background-color: rgba(0, 0, 0, 0.3); display: none; transition: all 0.3s ease-in-out;}
+    .nav_left .nav_widget {width: 40%; height: 100vh; padding: 30px 0 60px 0; background-color: white; color: black; display: flex; flex-direction: column; justify-content: space-between; position: absolute; left: -30%;}
+
+    .nav_left .nav_widget_head {width: 100%; display: flex; justify-content: space-between; align-items: center;padding: 0 20px 0 4vw;}
+    .nav_left .nav_widget_head h1 {font-size: 4.0vw;}
+    .nav_left .nav_widget_head img {width: 25px; height: 25px;}
+    .nav_left .nav_widget_head img:hover {cursor: pointer;}
+
+    .nav_left .nav_widget > ul {position: absolute; top: 20vh; left: 0; width: 100%;}
+    .nav_left .nav_widget ul li {padding: 2vh 0 2vh 4vw;}
+    .nav_left .nav_widget ul li a{font-size: 1.4vw; font-weight: bold; color: black;}
+    .nav_left .nav_widget > ul > li:hover > a {color: goldenrod;}
+    .nav_left .nav_widget > ul > li:not(:last-of-type):hover {background-color: gainsboro;}
+    .nav_left .nav_widget ul li:hover .sub_menu{display: block;}
+    .nav_left .nav_widget > ul > li > a > img {width: 1.0vw; vertical-align: baseline; }
+    .nav_left .nav_widget ul li img[alt="icon_arrowdown"] {transform:rotate(270deg)}
+    
+    .nav_left .nav_widget .sub_menu {display: none; position: absolute; top:-20vh; left: 100%; background-color: gainsboro; width: 80%; height: 100vh;padding: 20vh 0 0 0;}
+    .nav_left .nav_widget .sub_menu > li:hover {background-color: white;}
+    
+    
+    .nav_left .nav_widget_sns {padding: 3vh 0 0; display: flex; justify-content: space-between; width: 60%}
+    .nav_left .nav_widget_sns > a > img {width: 2.5vw;}
+    .nav_left .nav_widget_sns img:hover {filter:invert(0.5);}
+
+    .nav_left .nav_widget_search {width: 80%; height: 50px; display: flex; align-items: center; border-bottom: 2px solid red; overflow: hidden; margin: 0 0 0 4vw}
+    .nav_left .nav_widget_search input {width: 80%; height: 50px; padding: 10px; border: none; font-size: 1.4vw;}
+    .nav_left .nav_widget_search input:focus {outline: none;}
+    .nav_left .nav_widget_search img {width: 4vw; height: 4vw; margin: 0 auto;}
+    .nav_left .nav_widget_search img:hover {filter:invert(0.5); cursor: pointer;}
+
+    /********************************** FOOTER STARTS **********************************/
+    footer {width: 100%; background-color: black;}
+
+    .footer_top {width: 100%; margin: 0 auto; padding: 150px 20px; display: flex; justify-content: space-between; align-items: flex-start; }
+    .footer_top_left {width: 50%; padding: 0 50px 0 0;}
+    .footer_top_left > p {margin: 0 0 20px;}
+    .footer_logo {margin: 0 0 20px; }
+    .footer_contact {margin: 0 0 20px;}
+    .footer_sns img {width: 18px; filter:invert(); margin: 0 10px 0 0;}
+    .footer_sns img:hover {filter:invert(0.5);}
+
+    .footer_sns_activity {width: 40%;}
+    .footer_sns_activity h4 {font-size: 25px; margin: 0 0 20px; padding: 0 0 0 10px; }
+    .footer_insta_content {width: 100%; display: flex; flex-flow: row wrap; justify-content: center;}
+    .footer_insta_content img {width: 23%; margin: 1%;}
+    .footer_insta_content img:hover {cursor: pointer; opacity: 0.7;}
+
+    .footer_bottom {text-align: center; height: 50px; line-height: 50px;border-top: 1px solid gray;}
+}

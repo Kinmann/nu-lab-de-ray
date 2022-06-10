@@ -1,0 +1,149 @@
+@charset "utf-8";
+section {width: 100%; height: auto; margin: 0 auto; padding: 90px 0;border-top: 1px solid rgba(221, 221, 221);}
+section #prdt_intro {width: 1200px; height: 770px; margin: 0 auto;}
+
+/* PRODUCT IMG*/
+section #img {width: 700px; height: 640px; float: left;}
+section #img #img_list {width: 70px; float: left; }
+section #img #img_list img {width: 50px;}
+section #img #img_list img:hover {cursor: pointer;}
+section #img #img_detail img {height: 620px;}
+
+/* PRODUCT INFO*/
+section #info {width: 470px; float: right;}
+section #info #info_title {width: 450px; height: 114px; border-top: 2px solid black; margin: 0 auto;}
+section #info #info_title h1 {font-size: 19px; padding: 45px 0 0;}
+section #info #info_title .sale {background-color: black; color: white; font-size: 19px; font-weight: bold; display: inline-block; padding: 3px 8px; float: right;} 
+
+section #info #info_detail {width: 450px; margin: 0 auto;} 
+section #info #info_detail ul {margin: 0 0 15px;}
+section #info #info_detail li p {font-size: 14px; margin: 0 0 20px;}
+section #info #info_detail li .price {font-size: 18px; font-weight: bold; color: darkgray; text-decoration: line-through;}
+section #info #info_detail li .sale {font-size: 28px; font-weight: bold; display: block; margin: 0 0 10px;}
+section #info #info_detail li .title {font-size: 13px; font-weight: bold; letter-spacing: 0.1em; width: 90px;display: inline-block;}
+section #info #info_detail li .content {font-size: 12px; letter-spacing: 0.1em;}
+
+section #info #info_detail table {width: 450px; height: 70px; border: 1px solid rgba(221, 221, 221); border-left: none; border-right: none;}
+section #info #info_detail table th {width: 90px; text-align: left;}
+
+section #info #info_detail #total_prdt {width: 450px;}
+section #info #info_detail #total_prdt_table {width: 450px; height: 100px; padding: 15px; border: 1px solid rgba(221, 221, 221);}
+section #info #info_detail #total_prdt_table .prdt_title {font-size: 14px; }
+section #info #info_detail #total_prdt_table .prdt_option {font-size: 14px; }
+section #info #info_detail #total_prdt_table .prdt_qty {width: 70px; height: 22px; display: inline-block; position: relative; vertical-align: top; padding: 0 0 0 6px;}
+section #info #info_detail #total_prdt_table .prdt_qty .qty_level {width: 24px; height: 22px; text-align: center; border: 1px solid rgba(221, 221, 221); border-right: none; border-radius: 3px; }
+section #info #info_detail #total_prdt_table .prdt_qty .qty_button_up {height: 11px; position: absolute; top: 0; left: 30px;}
+section #info #info_detail #total_prdt_table .prdt_qty .qty_button_up img {vertical-align: top;}
+section #info #info_detail #total_prdt_table .prdt_qty .qty_button_down {height: 10px; position: absolute; bottom: 1px; left: 30px}
+section #info #info_detail #total_prdt_table .prdt_qty .qty_button_down img {vertical-align: top;}
+section #info #info_detail #total_prdt_table .prdt_price {float: right; font-weight: bold;}
+
+section #info #info_detail #total_price {width: 450px; height: 70px; text-align: right; padding: 15px 10px 0; font-size: 14px;}
+section #info #info_detail #total_price strong {font-size: 21px;}
+
+section #info #info_detail #buttons {width: 450px; height: 80px;}
+section #info #info_detail #buttons .button_buy {width: 450px; height: 70px; background-color: black; color: white; display: block; font-size: 25px; font-weight: 600; letter-spacing: 0.15em; line-height: 70px; text-align: center;margin: 0 0 10px; box-shadow: 0 2px 9px grey;}
+section #info #info_detail #buttons .button_cart {width: 220px; height: 50px; background-color: white; text-align: center; font-size: 14px; font-weight: 500;line-height: 50px; border: 1px solid darkgray; display: inline-block;}
+section #info #info_detail #buttons .button_interest {width: 220px; height: 50px; background-color: white; text-align: center; font-size: 14px; font-weight: 500;line-height: 50px; border: 1px solid darkgray; display: inline-block;}
+
+/* PRODUCT DETAIL*/
+section #prdt_detail {width: 100%; margin: 0 auto;}
+
+/* detail menu*/
+section #prdt_detail #detail_menu {width: 90%; height: 55px; border-bottom: 1px solid rgba(221, 221, 221); margin: 0 auto 15px;}
+section #prdt_detail #detail_menu ul {width: 900px; height: 55px; margin: 0 auto;}
+section #prdt_detail #detail_menu ul li {float: left; display: inline-block; width: 180px; height: 55px;text-align: center; line-height: 55px; border: 1px solid rgba(221, 221, 221);}
+section #prdt_detail #detail_menu ul li a {display: inline-block; height: 55px; width: 180px;}
+section #prdt_detail #detail_menu ul .selected {border-top: 2px solid black; border-bottom: 1px solid white;}
+
+/* 상품정보 */
+section #prdt_detail #detail_info {width: 860px; background-color: gray; margin: 70px auto;}
+
+/* 관련상품 */
+section #prdt_detail .title {width: 1200px; text-align: center; font-size: 18px; margin: 70px auto 0;}
+section #prdt_detail #detail_related {width: 1100px; margin: 30px auto 70px; border-top: 1px solid rgba(221, 221, 221); border-bottom: 1px solid rgba(221, 221, 221); padding: 0 50px; overflow: hidden; }
+section #prdt_detail #detail_related .related_box {width: 200px; height: 370px; padding: 50px 25px; border-right: 1px solid rgba(221, 221, 221); text-align: center; float: left;}
+section #prdt_detail #detail_related .related_box:last-of-type {border-right: none;}
+section #prdt_detail #detail_related .related_box img {width: 150px; height: 150px; margin: 0 0 15px;}
+section #prdt_detail #detail_related .related_box p {width: 150px; margin: 0 0 15px; font-size: 15px; font-weight: 600;}
+
+/* 상품후기 */
+section #prdt_detail #detail_review {width: 1200px; height: 1000px; margin: 70px auto;}
+section #prdt_detail #detail_review .icon_naverpay {width: 12px; height: 12px; background-image:url(../img/icons/icon_naver.jpg); background-size: cover; background-color: red; border-radius: 3px; display: inline-block;}
+
+section #prdt_detail #detail_review #review_upper {width: 1400px; height: 230px; margin: 30px 0 0;}
+section #prdt_detail #detail_review #review_upper_left {width: 560px; height: 230px; float: left; padding: 20px 0; border: 1px solid rgba(221, 221, 221); border-left: none;}
+section #prdt_detail #detail_review #review_avrstars {width: 200px; height: 190px; float: left;}
+section #prdt_detail #detail_review #review_avrstars span {text-align: center; display: block; font-size: 14px;}
+section #prdt_detail #detail_review #avrstars_img {text-align: center; position: relative; margin: 30px 0; }
+section #prdt_detail #detail_review #avrstars_img img {width: 110px; }
+section #prdt_detail #detail_review #avrstars_img span {position: absolute; top: 50%; left: 50%; width: 50px; height: 50px; margin: -21px 0 0 -25px; color: white; font-size: 30px; display: inline-block;}
+
+section #prdt_detail #detail_review #review_graph {width: 358px; height: 190px; float: right; padding: 0 30px;}
+section #prdt_detail #detail_review .graph_box {width: 50px; height: 190px; float: left; margin: 0 12px 0 0;}
+section #prdt_detail #detail_review .graph_box:last-of-type {margin: 0;}
+section #prdt_detail #detail_review .graph_box span {font-size: 12px; width: 50px; height: 20px; line-height: 20px; text-align: center; display: block;}
+section #prdt_detail #detail_review .graph_bar {width: 10px; height: 126px; background-color: rgba(221, 221, 221); margin: 12px auto; border-radius: 15px; position: relative; overflow: hidden;}
+section #prdt_detail #detail_review .graph_level {position: absolute; left: 0; bottom: 0; width: 10px; height: 79%; border-radius: 15px; background-color: black; }
+
+section #prdt_detail #detail_review #review_upper_right {width: 640px; height: 230px; float: right; padding: 20px 10px; margin: 0 200px 0 0; overflow: hidden; border: 1px solid rgba(221, 221, 221); border-right: none;}
+section #prdt_detail #detail_review #review_upper_right h4 {font-size: 16px; font-weight: 500; margin: 0 0 17px; }
+section #prdt_detail #detail_review #review_slide {width: 840px; height: 130px;}
+section #prdt_detail #detail_review .review_slide_con {width: 400px; height: 130px; float: left;}
+section #prdt_detail #detail_review .slide_con_img {width: 130px; height: 130px; border-radius: 10px; display: inline-block; float: left; margin: 0 10px 0 0; overflow: hidden; }
+section #prdt_detail #detail_review .slide_con_img img {width: 130px; height: 130px; }
+section #prdt_detail #detail_review .slide_con_text {width: 260px; height: 130px; display: inline-block;}
+section #prdt_detail #detail_review .slide_con_text .stars {background-color: white; margin: 0 0 10px; }
+section #prdt_detail #detail_review .slide_con_text .stars table {width: 100px; height: 10px;}
+section #prdt_detail #detail_review .slide_con_text .stars table img {width: 14px; height: 14px;}
+section #prdt_detail #detail_review .slide_con_text h5 {width: 220px; font-size: 12px; margin: 0 0 10px;}
+section #prdt_detail #detail_review .slide_con_text p {width: 260px; font-size: 12px; margin: 0 0 15px;}
+section #prdt_detail #detail_review .slide_con_text span {font-size: 12px; color: gray;}
+
+section #prdt_detail #detail_review #review_lower {width: 1200px; height: 700px; padding: 40px 0;}
+section #prdt_detail #detail_review #review_sort {width: 1200px; height: 30px; display: block; border-bottom: 1px solid rgba(221, 221, 221);}
+section #prdt_detail #detail_review #review_sort > li {float: left; font-size: 12px; font-weight: bold; margin: 0 5px; text-align: center; }
+section #prdt_detail #detail_review #review_list {border-bottom: 1px solid rgba(221, 221, 221);}
+section #prdt_detail #detail_review #review_list_con {width: 1000px; float: left; padding: 0 20px;}
+section #prdt_detail #detail_review #review_list li {display: flex; border-bottom: 1px solid rgba(221, 221, 221); }
+section #prdt_detail #detail_review #review_list_con table {margin: 30px 0 10px;}
+section #prdt_detail #detail_review #review_list_con table img {width: 14px; height: 14px;}
+section #prdt_detail #detail_review #review_list_con h5 {margin: 0 0 10px; font-size: 12px; }
+section #prdt_detail #detail_review #review_list_con p {margin: 0 0 10px; font-size: 12px; color: grey;}
+section #prdt_detail #detail_review #review_list_con .review_name {font-size: 12px; display: inline-block; margin: 20px 0 30px 3px; }
+section #prdt_detail #detail_review .review_list_img {height: 80px; margin: 0 0 8px; }
+section #prdt_detail #detail_review .review_list_img li {float: left; margin: 0 8px 0 0; border-radius: 7px; overflow: hidden; }
+section #prdt_detail #detail_review .review_list_img img { width: 80px; height: 80px; }
+section #prdt_detail #detail_review #review_list_item {width: 200px; display: flex; flex-direction: column; justify-content: space-between; text-align: center; font-size: 12px; float: right; padding: 30px 0;}
+section #prdt_detail #detail_review #review_list_item button {width: 70px; height: 25px; margin: 0 65px; font-size: 12px; border: none; border-radius: 20px; display: inline-block;}
+
+/* 상품문의 */
+section #prdt_detail #detail_inquiry {width: 1200px; height: auto; margin: 70px auto;}
+section #prdt_detail #detail_inquiry #inquiry_header {width: 1200px; height: 30px; margin: 0 0 15px; text-align: center; font-size: 18px; font-weight: bold;}
+section #prdt_detail #detail_inquiry #inquiry_title {display: inline-block; width: 120px; height: 30px; position: absolute; margin: 0 0 0 -60px;}
+section #prdt_detail #detail_inquiry #inquiry_buttons {display: inline-block; float: right; font-size: 12px; font-weight: 500; letter-spacing: 0.15em; line-height: 30px;}
+section #prdt_detail #detail_inquiry #inquiry_buttons a {width: 70px; height: 30px; display: inline-block; border: 1px solid rgba(221, 221, 221); }
+section #prdt_detail #detail_inquiry #inquiry_table {width: 1200px;}
+section #prdt_detail #detail_inquiry #inquiry_table table {width: 100%; border-top: 1px solid rgba(221, 221, 221);}
+section #prdt_detail #detail_inquiry #inquiry_table tr {width: 100%; height: 50px;}
+section #prdt_detail #detail_inquiry #inquiry_table td {border-bottom: 1px solid rgba(221, 221, 221);}
+section #prdt_detail #detail_inquiry #inquiry_table td:not(:nth-of-type(2)) {text-align: center; font-size: 12px;}
+section #prdt_detail #detail_inquiry #inquiry_table td img {margin: 0 5px 0 0;}
+section #prdt_detail #detail_inquiry #inquiry_pageflip {text-align: center; margin: 30px 0;}
+section #prdt_detail #detail_inquiry #inquiry_pageflip img {vertical-align: middle;}
+section #prdt_detail #detail_inquiry #inquiry_pageflip ol {display: inline-block; margin: 0 15px; vertical-align:middle;}
+section #prdt_detail #detail_inquiry #inquiry_pageflip li a {display: inline-block; height: 20px; vertical-align: top; }
+
+/* 구매정보 */
+section #prdt_detail #detail_purchase {width: 1200px; height: auto; margin: 70px auto;}
+section #prdt_detail #detail_purchase #purchase_upper > div {padding: 40px;}
+section #prdt_detail #detail_purchase h4 {font-size: 14px; padding: 15px 0; color: #666;}
+section #prdt_detail #detail_purchase .exchange_title {border-bottom: 1px solid rgba(221, 221, 221); color: black;}
+section #prdt_detail #detail_purchase p {font-size: 14px; margin: 15px 0 15px; color: #666;}
+section #prdt_detail #detail_purchase ul {margin: 15px 0 0;}
+section #prdt_detail #detail_purchase li {font-size: 14px; color: #666; margin: 5px 0 0;}
+section #prdt_detail #detail_purchase .exchange_desc {list-style:"- "; margin: 8px 0 0 6px;  }
+section #prdt_detail #detail_purchase #purchase_upper {width: 1200px; height: 320px;}
+section #prdt_detail #detail_purchase #payment_info {width: 600px; height: 320px; float: left; border: 1px solid rgba(221, 221, 221); border-right: none;}
+section #prdt_detail #detail_purchase #logistics_info {width: 600px; height: 320px; float: right; border: 1px solid rgba(221, 221, 221);}
+section #prdt_detail #detail_purchase #exchange_info {width: 1200px; padding: 40px; border: 1px solid rgba(221, 221, 221); border-top: none;}

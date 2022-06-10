@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POINTE</title>
+        <link href="css/reset.css" rel="stylesheet">
+        <link href="css/common_max_799.css" rel="stylesheet">
+        <link href="css/common_min_800.css" rel="stylesheet">
+        <link href="css/common_min_1250.css" rel="stylesheet">
+        <link href="css/main_max_799.css" rel="stylesheet">
+        <link href="css/main_min_800.css" rel="stylesheet">
+        <link href="css/main_min_1250.css" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                var scroll_pos = 0;
+                $(window).scroll(function(){
+                    scroll_pos = $(this).scrollTop();
+                    if(scroll_pos > 100) {
+                        $("header").css("background-color", "black")
+                    } else {
+                        $("header").css("background-color", "transparent")
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+
+                
+                $(".icon_menu").click(function(){    
+                    $(".nav_widget_curtain").fadeIn();
+                    $(".nav_widget").show();
+                    if (window.innerWidth > 1249) {
+                        $(".nav_widget").animate({
+                            right: 0
+                        });
+                    } else {
+                        $(".nav_widget").animate({
+                            left: 0
+                        });
+                    }
+                    
+                });
+                $(".widget_close").click(function(){
+                    $(".nav_widget_curtain").fadeOut();
+                    if (window.innerWidth > 1249) {
+                        $(".nav_widget").animate({
+                            right: '-20%'
+                        }, function(){
+                            $(".nav_widget").hide();
+                        });
+                    } else {
+                        $(".nav_widget").animate({
+                            left: '-50%'
+                        }, function(){
+                            $(".nav_widget").hide();
+                        });
+                    }
+                });
+            });
+        </script>
+        <script>
+            $(function(){
+                $("#likes_bar_rates_1").css("width", $("#likes_bar_percents_1").text());
+                $("#likes_bar_percents_1").css("left", $("#likes_bar_percents_1").text());
+                $("#likes_bar_rates_2").css("width", $("#likes_bar_percents_2").text());
+                $("#likes_bar_percents_2").css("left", $("#likes_bar_percents_2").text());
+                $("#likes_bar_rates_3").css("width", $("#likes_bar_percents_3").text());
+                $("#likes_bar_percents_3").css("left", $("#likes_bar_percents_3").text());
+            });
+        </script>
+        <script>
+            $(function(){
+               $(".slider_buttons > div").click(function(){
+                   var $this = $(this);
+                   var $index = $this.index();
+                   var $slider = $this.parent().parent();
+                   var $current = $slider.find("> .slider_background > img.active");
+                   var isleft = $index == 0;
+                   var $post;
+                   
+                   if (isleft ) {
+                       $post = $current.prev();
+                   }
+                   else {
+                       $post = $current.next();
+                   };
+                   
+                   if ($post.length == 0 ) {
+                       if (isleft) {
+                           $post = $slider.find(" > .slider_background > img:last-child");
+                       }
+                       else {
+                           $post = $slider.find(" > .slider_background > img:first-child");
+                       }
+                   };
+                   
+                   if ($post.index() == 2) {
+                       $slider.find("> .slider_background > img:last-child").css("opacity", "0.7");
+                    }
+                   else {
+                       $slider.find("> .slider_background > img:last-child").css("opacity", "");
+                    };
+                   
+                    $post.addClass("active");
+                    $current.removeClass("active");
+               });
+            });
+        </script>
+        <style>
+            wrap {background-color: white;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            
+            <!-------------------------------------HEADER STARTS------------------------------------->
+            
+            <!--------------------------------------- HEADER_WIDE STARTS --------------------------------------->
+            <header id="header_wide">
+                
+                <!------------------------ HEADER LOGO STARTS ------------------------>
+                <div class="logo">
+                    <a href="main.html">
+                        <img src="img/main/logo.png" alt="logo">
+                    </a>
+                </div>
+                
+                <!------------------------ NAV STARTS ------------------------>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="sub.html">HOME</a>
+                                
+                                <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                            
+                            <ul class="sub_menu">
+                                <li><a href="#none">Home1</a></li>
+                                <li><a href="#none">Home2</a></li>
+                                <li><a href="#none">Home3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                CLASSES
+                                <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#none">Jazz Funk</a></li>
+                                <li><a href="#none">Modern</a></li>
+                                <li><a href="#none">House Dance</a></li>
+                                <li><a href="#none">Street Dance</a></li>
+                                <li><a href="#none">Disco Dance</a></li>
+                                <li><a href="#none">Tango</a></li>
+                                <li><a href="#none">Classic Ballet</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                STUDIO
+                                <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#none">Your studio</a></li>
+                                <li><a href="#none">Instructors</a></li>
+                                <li><a href="#none">Awards</a></li>
+                                <li><a href="#none">Donations</a></li>
+                                <li><a href="#none">Why Choose Us</a></li>
+                                <li><a href="#none">Membership</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                NEWS AND MEDIA
+                                <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#none">Your studio</a></li>
+                                <li><a href="#none">Instructors</a></li>
+                                <li><a href="#none">Awards</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="sub.html">
+                                FEATURES
+                                <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                            </a>
+                            <ul class="sub_menu">
+                                <li><a href="#none">Schedule</a></li>
+                                <li><a href="#none">Price Table</a></li>
+                                <li><a href="#none">Appointments</a></li>
+                                <li><a href="#none">Coming soon</a></li>
+                                <li><a href="#none">FAQ</a></li>
+                                <li><a href="#none">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sub.html">CONTACT US</a></li>
+                        <li><a href="sub.html">REQUEST QUOTE</a></li>
+                    </ul>
+                </nav>
+                <!------------------------ NAV_RIGHT STARTS ------------------------>
+                <div class="nav_right">
+                    <img src="img/main/icons/menu_wide.png" alt="icon_hamburger" class="icon_menu icon_menu_wide">
+                    <div class="nav_widget_curtain">
+                        <div class="nav_widget">
+                            <div class="nav_widget_head">
+                                <h1>MENU</h1>
+                                <img src="img/main/icons/close.png" alt="icon_close" class="widget_close">
+                            </div>
+                            <ul>
+                                <li><a href="#none">Why Choose Us</a></li>
+                                <li><a href="#none">Your Studio</a></li>
+                                <li><a href="#none">Schedule</a></li>
+                                <li><a href="#none">Pricing</a></li>
+                                <li><a href="#none">FAQ</a></li>
+                                <li><a href="#none">Contact Us</a></li>
+                                <li>
+                                    <div class="nav_widget_sns">
+                                        <a href="#none"><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                                        <a href="#none"><img src="img/main/icons/sns_youtube.png" alt="icon_youtube"></a>
+                                        <a href="#none"><img src="img/main/icons/sns_instagram.png" alt="icon_instagram"></a>
+                                        <a href="#none"><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="nav_widget_search">
+                                <input type="text" name="search_widget" placeholder="Find keywords...">
+                                <img src="img/main/icons/search.png" alt="icon_find">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!--------------------------------------- HEADER_NARROW STARTS --------------------------------------->
+            <header id="header_narrow">
+
+                <!------------------------ HEADER LOGO STARTS ------------------------>
+                <div class="logo">
+                    <a href="main.html">
+                        <img src="img/main/logo.png" alt="logo">
+                    </a>
+                    <img src="img/main/icons/menu_narrow.png" alt="menu_narrow" class="icon_menu icon_menu_narrow">
+                </div>
+
+                <!------------------------ NAV_LEFT STARTS ------------------------>
+                <div class="nav_left">
+                    <div class="nav_widget_curtain">
+                        <div class="nav_widget">
+                            <div class="nav_widget_head">
+                                <h1>MENU</h1>
+                                <img src="img/main/icons/close.png" alt="icon_close" class="widget_close">
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="sub.html">
+                                        HOME
+                                        <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                                    </a>
+
+                                    <ul class="sub_menu">
+                                        <li><a href="#none">Home1</a></li>
+                                        <li><a href="#none">Home2</a></li>
+                                        <li><a href="#none">Home3</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="sub.html">
+                                        CLASSES
+                                        <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#none">Jazz Funk</a></li>
+                                        <li><a href="#none">Modern</a></li>
+                                        <li><a href="#none">House Dance</a></li>
+                                        <li><a href="#none">Street Dance</a></li>
+                                        <li><a href="#none">Disco Dance</a></li>
+                                        <li><a href="#none">Tango</a></li>
+                                        <li><a href="#none">Classic Ballet</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="sub.html">
+                                        STUDIO
+                                        <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#none">Your studio</a></li>
+                                        <li><a href="#none">Instructors</a></li>
+                                        <li><a href="#none">Awards</a></li>
+                                        <li><a href="#none">Donations</a></li>
+                                        <li><a href="#none">Why Choose Us</a></li>
+                                        <li><a href="#none">Membership</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="sub.html">
+                                        NEWS AND MEDIA
+                                        <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#none">Your studio</a></li>
+                                        <li><a href="#none">Instructors</a></li>
+                                        <li><a href="#none">Awards</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="sub.html">
+                                        FEATURES
+                                        <img src="img/main/icons/arrow_down.png" alt="icon_arrowdown">
+                                    </a>
+                                    <ul class="sub_menu">
+                                        <li><a href="#none">Schedule</a></li>
+                                        <li><a href="#none">Price Table</a></li>
+                                        <li><a href="#none">Appointments</a></li>
+                                        <li><a href="#none">Coming soon</a></li>
+                                        <li><a href="#none">FAQ</a></li>
+                                        <li><a href="#none">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="sub.html">CONTACT US</a></li>
+                                <li><a href="sub.html">REQUEST QUOTE</a></li>
+                                <li>
+                                    <div class="nav_widget_sns">
+                                        <a href="#none"><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                                        <a href="#none"><img src="img/main/icons/sns_youtube.png" alt="icon_youtube"></a>
+                                        <a href="#none"><img src="img/main/icons/sns_instagram.png" alt="icon_instagram"></a>
+                                        <a href="#none"><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="nav_widget_search">
+                                <input type="text" name="search_widget" placeholder="Find keywords...">
+                                <img src="img/main/icons/search.png" alt="icon_find">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <!-------------------------------------SLIDER STARTS------------------------------------->
+            <div id="slider">
+                <div class="slider_background">
+                    <img src="img/main/slider/slider_1.jpg" alt="slider_bg_1" class="active">
+                    <img src="img/main/slider/slider_2.jpg" alt="slider_bg_2">
+                    <img src="img/main/slider/slider_3.avif" alt="slider_bg_3">
+                </div>
+                <div class="slider_textbox">
+                    <h1>DANCE FIRST.<br>THINK LATER.</h1>
+                    <p>Find the joy in movement! Pointe offers excellence in dance instruction and fitness for both children and adults of all skill levels and abilities</p>
+                    <div class="slider_text_buttons">
+                        <span class="button_black"><a href="#">WATCH VIDEO</a></span>
+                        <span class="button_white"><a href="#">ABOUT US</a></span>
+                    </div>
+                </div>
+                <div class="slider_buttons">
+                    <div class="slider_buttons_l">
+                        <img src="img/main/icons/arrow_left.png" alt="icon_arrow_l">
+                    </div>
+                    <div class="slider_buttons_r">
+                        <img src="img/main/icons/arrow_right.png" alt="icon_arrow_r">
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!-------------------------------------SECTION STARTS------------------------------------->
+            <section>
+                
+                <!------------------------ SUBSCRIBE STARTS ------------------------>
+                <div id="subscribe">
+                    <div class="subscribe_inner">
+                        <h2>GET NEWS, UPDATES, SPECIAL EVENT NOTICES<br>AND MORE WHEN YOU JOIN OUR EMAIL LIST</h2>
+                        <form class="email_input">
+                            <input type="text" name="email" placeholder="Your email address...">
+                            <button type="submit">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!------------------------ REPRESENTATIVE STARTS ------------------------>
+                <div id="representative">
+                    <div class="representative_inner">
+                        <div class="representative_img">
+                            <img src="img/main/section/representative_img2.jpg" alt="representative_img">
+                        </div>
+                        <div class="representative_text">
+                            <h1>CHARLOTTE SMITHERS</h1>
+                            <p> Charlotte started her dance journey at an early age, and her love of movement led her to explore Ballet, Jazz, Hip Hop, Belly Dancing, Burlesque, Aerial Hoop and Silks in addition to partner dancing. Encouraged by her mother’s love of Ballroom dancing, Charlotte began Ballroom and Latin dancing in 2002 and joined the Go Dance instructor team in 2014. She loves the sassy energy of Samba, the smooth flow and elegant progression of Foxtrot, and being able to dance West Coast Swing to her latest favorite songs. She has experience competing on the Country Western and Ballroom circuits.</p>
+                            <span class="link_span"><a href="#none">&#8226; ABOUT ME</a></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ ABOUT STARTS ------------------------>
+                <div id="about">
+                    <div class="about_inner">
+                        <h1>OVER 10 YEARS IN THE DANCING GAME</h1>
+                        <div class="about_content_box">
+                            <div class="about_content">
+                                <h4>ABOUT US</h4>
+                                <p>Our reputation for providing the very highest standards of tuition in local venues is what we think sets us apart. We know fun, fitness.</p>
+                                <span class="link_span"><a href="#none">&#8226; READ MORE</a></span>
+                            </div>
+                            <div class="about_content">
+                                <h4>OUR GOAL</h4>
+                                <p>Our goal is for our students to become well-rounded dancers with a technical training to give them the foundation to pursue career.</p>
+                                <span class="link_span"><a href="#none">&#8226; READ MORE</a></span>
+                            </div>
+                            <div class="about_content">
+                                <h4>CLASSES</h4>
+                                <p>We firmly believe that dance education develops and teaches each individual participant physically, socially.</p>
+                                <span class="link_span"><a href="#none">&#8226; READ MORE</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ PICS_BANNER_1 STARTS ------------------------>
+                <div id="pics_banner_1">
+                    <div class="pics_banner_1_content">
+                        <img src="img/main/section/pics_banner_1_img1.jpg" alt="hiphop">
+                        <div class="pics_banner_1_text">
+                            <h3>HIPHOP DANCE</h3>
+                            <p>Hip-hop dance is a range of street dance styles primarily performed to hip-hop music or that have evolved as part of hip-hop culture.</p>
+                        </div>
+                    </div>
+                    <div class="pics_banner_1_content">
+                        <img src="img/main/section/pics_banner_1_img2.jpg" alt="urban">
+                        <div class="pics_banner_1_text">
+                            <h3>URBAN DANCE</h3>
+                            <p>The Urban Dance style stems mainly from hip-hop and street dance styles (house, funk, pop, lock, and breaking) and also draws inspiration from other dance styles, such as: jazz, contemporary, tap, and more.</p>
+                        </div>
+                    </div>
+                    <div class="pics_banner_1_content">
+                        <img src="img/main/section/pics_banner_1_img3.jpg" alt="bboy">
+                        <div class="pics_banner_1_text">
+                            <h3>B-BOY</h3>
+                            <p>Breaking, also called breakdancing or b-boying/b-girling, is an athletic style of street dance originating from the African American community in the United States. </p>
+                        </div>
+                    </div>
+                    <div class="pics_banner_1_content">
+                        <img src="img/main/section/pics_banner_1_img4.jpg" alt="choreography">
+                        <div class="pics_banner_1_text">
+                            <h3>CHOREOGRAPHY</h3>
+                            <p>Choreography is the art or practice of designing sequences of movements of physical bodies (or their depictions) in which motion or form or both are specified.</p>
+                        </div>
+                    </div>
+                    <div class="pics_banner_1_content">
+                        <img src="img/main/section/pics_banner_1_img5.jpg" alt="jazz_funk">
+                        <div class="pics_banner_1_text">
+                            <h3>JAZZ FUNK</h3>
+                            <p>Jazz funk is a lyrical style of dance, perfect for storytelling and projecting emotional depth. It’s exciting and suggestive but without the kind of vulgarity that would undermine its mainstream appeal.</p>
+                        </div>
+                    </div>
+                    <div class="pics_banner_1_content">
+                        <img src="img/main/section/pics_banner_1_img6-2.jpg" alt="ballet">
+                        <div class="pics_banner_1_text">
+                            <h3>BALLET</h3>
+                            <p>Ballet (French: [balɛ]) is a type of performance dance that originated during the Italian Renaissance in the fifteenth century and later developed into a concert dance form in France and Russia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ ARTICLE STARTS ------------------------>
+                <div id="articles">
+                    <div class="articles_inner">
+                        <div class="articles_text">
+                            <h1>ARTICLES</h1>
+                            <p>Danceworks studios are available to hire, providing a premier audition and rehearsal centre in the heart of London. We also arrange private parties and dance classes on request.</p>
+                        </div>
+                        <div class="articles_contentbox">
+                            <div class="articles_content">
+                                <div class="articles_img">
+                                    <img src="img/main/section/articles_img1.jpg" alt="article_img_1">
+                                    <div class="articles_datebox">
+                                        <h5>25</h5>
+                                        <span>Jan</span>
+                                    </div>
+                                </div>
+                                <h4>STREET DANCE MASTER SALLY SEE THE KIDS AT GAME</h4>
+                            </div>
+                            <div class="articles_content">
+                                <div class="articles_img">
+                                    <img src="img/main/section/articles_img2.jpg" alt="article_img_2">
+                                    <div class="articles_datebox">
+                                        <h5>22</h5>
+                                        <span>Jan</span>
+                                    </div>
+                                </div>
+                                <h4>GOING OUT HARD IS NOT ALWAYS SO EASY AS IT SEEMS</h4>
+                            </div>
+                            <div class="articles_content">
+                                <div class="articles_img">
+                                    <img src="img/main/section/articles_img3.jpg" alt="article_img_3">
+                                    <div class="articles_datebox">
+                                        <h5>20</h5>
+                                        <span>Jan</span>
+                                    </div>
+                                </div>
+                                <h4>THEY CALL THEM "DANCING CROOKS" ARE THEY?</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ BATTLE STARTS ------------------------>
+                <div id="battle">
+                    <h2>FINAL DANCE OF THE SEASON</h2>
+                    <div class="battle_content">
+                        <div class="battle_attendant">
+                            <h1 class="first_name font_spray">SOPHIA</h1>
+                            <h1 class="sir_name">ANDERSON</h1>
+                            <p>"Yellow Butterfly"</p>
+                        </div>
+                        <div class="play_buttonbox">
+                            <button class="vid_play">
+                                <img src="img/main/icons/play-button.png" alt="icon_play">
+                            </button>
+                        </div>
+                        <div class="battle_attendant">
+                            <h1 class="first_name font_spray">RILEY</h1>
+                            <h1 class="sir_name">THOMPSON</h1>
+                            <p>"Dark Wolf"</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ LIKES STARTS ------------------------>
+                <div id="likes">
+                    <div class="likes_inner">
+                        <div class="likes_text">
+                            <h2>TOGETHER WE HAVE CREATED A FLEXIBLE ACADEMIC MODEL</h2>
+                            <p>Dance develops the individual physically, artistically, intellectually, emotionally, and socially. Dance students join an artistic family where they develop enduring friendships and nurture a passion for the arts. While having fun, dance students gain many benefits.</p>
+                        </div>
+                        <div class="likes_stats">
+                            <div class="likes_stat_content">
+                                <p>Modern Dance</p>
+                                <div class="likes_bar_base">
+                                    <div id="likes_bar_rates_1" class="likes_bar_rates"></div>
+                                    <div id="likes_bar_percents_1" class="likes_bar_percents">91%</div>
+                                </div>
+                            </div>
+                            <div class="likes_stat_content">
+                                <p>Break Dance</p>
+                                <div class="likes_bar_base">
+                                    <div id="likes_bar_rates_2" class="likes_bar_rates"></div>
+                                    <div id="likes_bar_percents_2" class="likes_bar_percents">85%</div>
+                                </div>
+                            </div>
+                            <div class="likes_stat_content">
+                                <p>Hip-Hop Dance</p>
+                                <div class="likes_bar_base">
+                                    <div id="likes_bar_rates_3" class="likes_bar_rates"></div>
+                                    <div id="likes_bar_percents_3" class="likes_bar_percents">95%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ INSTRUCTORS STARTS ------------------------>
+                <div id="instructors">
+                    <div class="instructors_inner">
+                        <h1>OUR AMAZING INSTRUCTORS</h1>
+                        <div class="instructors_contentbox">
+                            <div class="instructors_content">
+                                <div class="instructors_img">
+                                    <img src="img/main/section/instructors_img1.jpg" alt="GREG KRASINSKI">
+                                    <div class="instructors_snsbox">
+                                        <div class="instructors_sns">
+                                            <a hef=""><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                                            <a hef=""><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                                            <a hef=""><img src="img/main/icons/sns_skype.png" alt="icon_skype"></a>
+                                            <a hef=""><img src="img/main/icons/sns_linkedin.png" alt="icon_linkedin"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructors_text">
+                                    <h4>GREG KRASINSKI</h4>
+                                    <span>Break Dance</span>
+                                </div>
+                            </div>
+                            <div class="instructors_content">
+                                <div class="instructors_img">
+                                    <img src="img/main/section/instructors_img2.jpg" alt="BELLA ALMOST">
+                                    <div class="instructors_snsbox">
+                                        <div class="instructors_sns">
+                                            <a hef=""><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                                            <a hef=""><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                                            <a hef=""><img src="img/main/icons/sns_skype.png" alt="icon_skype"></a>
+                                            <a hef=""><img src="img/main/icons/sns_linkedin.png" alt="icon_linkedin"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructors_text">
+                                    <h4>BELLA ALMOST</h4>
+                                    <span>Freestyle</span>
+                                </div>
+                            </div>
+                            <div class="instructors_content">
+                                <div class="instructors_img">
+                                    <img src="img/main/section/instructors_img3.jpg" alt="THEO JUDE">
+                                    <div class="instructors_snsbox">
+                                        <div class="instructors_sns">
+                                            <a hef=""><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                                            <a hef=""><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                                            <a hef=""><img src="img/main/icons/sns_skype.png" alt="icon_skype"></a>
+                                            <a hef=""><img src="img/main/icons/sns_linkedin.png" alt="icon_linkedin"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructors_text">
+                                    <h4>THEO JUDE</h4>
+                                    <span>Ballet</span>
+                                </div>
+                            </div>
+                            <div class="instructors_content">
+                                <div class="instructors_img">
+                                    <img src="img/main/section/instructors_img4.jpg" alt="ESME SHIELD">
+                                    <div class="instructors_snsbox">
+                                        <div class="instructors_sns">
+                                            <a hef=""><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                                            <a hef=""><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                                            <a hef=""><img src="img/main/icons/sns_skype.png" alt="icon_skype"></a>
+                                            <a hef=""><img src="img/main/icons/sns_linkedin.png" alt="icon_linkedin"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="instructors_text">
+                                    <h4>ESME SHIELD</h4>
+                                    <span>Jazz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ EVENTS STARTS ------------------------>
+                <div id="events">
+                    <div class="events_inner">
+                        <h1>AMAZING UPCOMING EVENTS</h1>
+                        <div class="events_contentbox">
+                            <div class="events_content">
+                                <div class="events_text">
+                                    <h4>APRIL 13TH</h4>
+                                    <p>2020 | 10:00 am - 6:30 pm</p>
+                                </div>
+                                <div class="events_img">
+                                    <img src="img/main/section/events_bg_1.jpg" alt="events_img_freestyle">
+                                    <h2 class="font_spray">FREESTYLE<br>BATTLE</h2>
+                                </div>
+                            </div>
+                            <div class="events_content">
+                                <div class="events_text">
+                                    <h4>APRIL 27TH</h4>
+                                    <p>2020 | 10:00 am - 6:30 pm</p>
+                                </div>
+                                <div class="events_img">
+                                    <img src="img/main/section/events_bg_2.jpg" alt="events_img_ballet">
+                                    <h2 class="font_spray">BALLET<br>EVENING</h2>
+                                </div>
+                            </div>
+                            <div class="events_content">
+                                <div class="events_text">
+                                    <h4>MAY 1ST</h4>
+                                    <p>2020 | 10:00 am - 6:30 pm</p>
+                                </div>
+                                <div class="events_img">
+                                    <img src="img/main/section/events_bg_3.jpg" alt="events_img_hiphop">
+                                    <h2 class="font_spray">HIPHOP<br>TOURNAMENT</h2>
+                                </div>
+                            </div>
+                            <div class="events_content">
+                                <div class="events_text">
+                                    <h4>MAY 17TH</h4>
+                                    <p>2020 | 10:00 am - 6:30 pm</p>
+                                </div>
+                                <div class="events_img">
+                                    <img src="img/main/section/events_bg_4.jpg" alt="events_img_audition">
+                                    <h2 class="font_spray">AUDITION</h2>
+                                </div>
+                            </div>
+                            <div class="events_content">
+                                <div class="events_text">
+                                    <h4>MAY 20TH</h4>
+                                    <p>2020 | 10:00 am - 6:30 pm</p>
+                                </div>
+                                <div class="events_img">
+                                    <img src="img/main/section/events_bg_5.jpg" alt="events_img_dance">
+                                    <h2 class="font_spray">DANCE<br>CAMP</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!------------------------ PICS_BANNER_2 STARTS ------------------------>
+                <div id="pics_banner_2">
+                    <div class="pics_banner_2_content">
+                        <img src="img/main/section/pics_banner_2_img1.jpg" alt="pics_banner_2_img1">
+                        <h1 class="font_spray">COOL</h1>
+                    </div>
+                    <div class="pics_banner_2_content">
+                        <img src="img/main/section/pics_banner_2_img2.jpg" alt="pics_banner_2_img2">
+                        <h1 class="font_spray">ENERGETIC</h1>
+                    </div>
+                    <div class="pics_banner_2_content">
+                        <img src="img/main/section/pics_banner_2_img3.jpg" alt="pics_banner_2_img3">
+                        <h1 class="font_spray">SEXY</h1>
+                    </div>
+                    <div class="pics_banner_2_content">
+                        <img src="img/main/section/pics_banner_2_img4.jpg" alt="pics_banner_2_img4">
+                        <h1 class="font_spray">LITS</h1>
+                    </div>
+                    <div class="pics_banner_2_content">
+                        <img src="img/main/section/pics_banner_2_img5.jpg" alt="pics_banner_2_img5">
+                        <h1 class="font_spray">EXPRESSION</h1>
+                    </div>
+                    <div class="pics_banner_2_content">
+                        <img src="img/main/section/pics_banner_2_img6.jpg" alt="pics_banner_2_img6">
+                        <h1 class="font_spray">FUN</h1>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-------------------------------------FOOTER STARTS------------------------------------->
+            <footer>
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <div class="footer_logo">
+                            <img src="img/main/logo.png" alt="footer_logo">
+                        </div>
+                        <p>Pointe Dance Studio is committed to providing a training ground for dancers of all ages and abilities, embracing traditional to emerging styles and inspiring dancers to strive for both technical excellence and meaningful artistry.</p>
+                        <div class="footer_contact">
+                            <p>133 Jedburgh Road</p>
+                            <p>+1 202 555 0133 | M: info@pointe.com</p>
+
+                        </div>
+                        <div class="footer_sns">
+                            <a href="#"><img src="img/main/icons/sns_twitter.png" alt="icon_twitter"></a>
+                            <a href="#"><img src="img/main/icons/sns_instagram.png" alt="icon_instagram"></a>
+                            <a href="#"><img src="img/main/icons/sns_linkedin.png" alt="icon_linkedin"></a>
+                            <a href="#"><img src="img/main/icons/sns_youtube.png" alt="icon_youtube"></a>
+                            <a href="#"><img src="img/main/icons/sns_facebook.png" alt="icon_facebook"></a>
+                        </div>
+                    </div>
+
+                    <div class="footer_sns_activity">
+                        <h4>Instagram</h4>
+                        <div class="footer_insta_content">
+                            <img src="img/main/footer/insta_img_1.jpg" alt="insta_img1">
+                            <img src="img/main/footer/insta_img_2.jpg" alt="insta_img2">
+                            <img src="img/main/footer/insta_img_3.jpg" alt="insta_img3">
+                            <img src="img/main/footer/insta_img_4.jpg" alt="insta_img4">
+                            <img src="img/main/footer/insta_img_5.jpg" alt="insta_img5">
+                            <img src="img/main/footer/insta_img_6.jpg" alt="insta_img6">
+                            <img src="img/main/footer/insta_img_7.jpg" alt="insta_img7">
+                            <img src="img/main/footer/insta_img_8.jpg" alt="insta_img8">
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <p>Made by Ray J. KIM.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

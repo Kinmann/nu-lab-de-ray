@@ -1,0 +1,61 @@
+@charset "utf-8";
+
+/*HEADER*/
+header {width: 100%; height: 155px;}
+#upper_nav {min-width: 1200px; height: 79px; position: relative; border-bottom: 1px solid gainsboro;}
+#upper_nav_left{width: 500px; height: 79px; padding: 30px 35px ; float: left;}
+#upper_nav_left li {float: left; margin: 0 0 0 20px; font-size: 14px; color: grey; position: relative;}
+#upper_nav_left li a {color: grey;}
+#upper_nav_left li span {font-size: 16px;}
+#upper_nav_left li:first-of-type {border-right: 1px solid gainsboro; padding: 0 15px 0 0;}
+#upper_nav_left #community img {margin: 0 5px 0 0;}
+#upper_nav_left #community {height: 30px;}
+#upper_nav_left #community:hover ul{display: block; opacity: 0.95;}
+#upper_nav_left #community ul {position: absolute; top: 25px; left: -20px; width: 140px; padding: 20px 0;background-color: white; box-shadow: 0 0 5px; display: none; z-index: 2;}
+#upper_nav_left #community ul li {width: 120px; height: 30px; line-height: 30px; display: block; }
+#upper_nav_left #community ul li a {width: 120px; height: 30px; display: block;}
+#upper_nav_left #community ul li:hover {color: black; font-weight: bold;}
+
+#upper_nav_logo {position: absolute; top:25%; left: 44%;}
+
+#upper_nav_login {float: right; width: 380px; padding: 30px 0; height: 79px;}
+#upper_nav_login li {float: left; margin: 0 15px;}
+#upper_nav_login li a {font-size: 14px; color: #999;}
+
+nav {width: 1348px; height: 57px; margin: 10px auto; padding: 18px; }
+nav ul {float: left;}
+nav li {float: left; margin: 0 0 0 42px; font-size: 15px; font-weight: 600; letter-spacing: 0.09em; position: relative;}
+nav li a {z-index: 1; }
+nav li:hover a::after{width: 4px; height: 4px; border-radius: 50%; background-color: black; position: absolute; top: -8px; left: 50%; content:" "}
+nav .menu_selected a::after{width: 4px; height: 4px; border-radius: 50%; background-color: black; position: absolute; top: -8px; left: 50%; content:" "}
+
+nav #nav_right {float: right;}
+nav #nav_right .nav_icon {float: left; margin: 0 6px; }
+.nav_icon img {width: 27px;}
+
+
+/*FOOTER*/
+footer {width: 100%; height: 395px; }
+#footer_upper {height: 283px; padding: 60px 0 0 0; border-top: 1px solid gainsboro; border-bottom: 1px solid gainsboro;}
+#service {width: 1200px; margin: 0 auto; }
+#service #cs {float: left; margin: 0 0 0 35px; width: 250px; height: 170px; text-align: center; }
+#service h4 {margin: 0 0 20px; }
+#service #cs span {font-size: 40px; font-weight: bold;letter-spacing: 0.1em;}
+#service #cs p {font-size: 14px; margin: 30px 0 0;}
+
+#service #cs2 {float: left; width: 550px; height: 170px; margin: 0 0 0 35px; text-align: center; }
+#service #cs2 li { margin: 5px 0 0 10px; font-size: 14px; display: inline-block;}
+
+#service #cs3 {float: left; width: 250px; height: 170px; margin: 0 0 0 35px; text-align: center; }
+#service #cs3 li {font-size: 14px; }
+#service #cs3 li:last-of-type {margin: 20px 0 0}
+
+#footer_lower {height: 112px;}
+#terms {width: 1200px; margin: 0 auto; padding: 30px 150px; text-align: center;}
+#terms_upper {width: 900px; height: 24px; margin: 0 auto; text-align: center; line-height: 24px; }
+#terms #certi_box {width: 110px; height: 24px; display: inline-block; text-align: center;}
+#terms #certi_box li {float: left; margin: 0 0 0 5px;}
+#terms span { width: 640px; height: 24px; color: grey; font-size: 14px; vertical-align: top; display: inline-block;}
+#terms .box {display: inline-block; font-size: 14px; font-weight: bold; background-color: rgba(0, 0, 0, 0.1); padding: 5px; margin: -5px 0 0 0;}
+#terms .box2 {display: inline-block; font-size: 14px; font-weight: bold; margin: 15px 0 0; background-color: rgba(0, 0, 0, 0.1); padding: 5px;}
+#terms a {color: grey;}

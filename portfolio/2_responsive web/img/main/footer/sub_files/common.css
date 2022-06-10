@@ -1,0 +1,50 @@
+@charset "utf-8";
+ @media (min-width: 1200px){
+
+     #wrap {width: 100%; height: auto; }
+    
+      .header_bar {width:100%; background-color: #9F1B32; position:fixed; top:0; z-index: 100;} 
+      .header_inner {width: 1200px; height: 70px; display: flex; justify-content: space-between; 
+        align-items: center; margin: 0 auto; }
+      .logo {display: flex; align-items: center; cursor: pointer; }
+      .nav_bar {width:700px; height: 30px;  }
+      .nav_bar ul {display: flex; justify-content: space-around; 
+        align-items: center; font-size: 13px; margin: 2px 0 0 0px; padding: 5px 5px;}
+      .nav_bar a:hover {color: #dfcb8f; transition: all 0.5s; } 
+      .nav_bar ul img {width: 20px; height: 20px; color: white; vertical-align: middle; filter: invert(100%);}
+      .nav_bar ul img:hover { filter: opacity(50%);}
+      .button {width:90px; height:35px;  margin:0 0 0 40px; border: 2px solid white; background-color:#9F1B32 ; 
+        color: white; padding: 2px 2px; border-radius: 3px 3px; text-align: center; transition: 0.3s; font-size: 13px; line-height: 24px;}
+      .button:hover {cursor: pointer; opacity: 0.7; background-color: white; color: black; } 
+      .nav_bar_a {width: 30px; height: 30px; display: none;}
+      .nav_bar ul li a {font-family: 'Montserrat', sans-serif;}
+  
+
+  /*--------- footer--------*/
+      footer {width: 100%;  background-color:#333}
+      .footer_top {width: 1200px; height: 350px; background-color: #333; margin: 0 auto; display: flex; justify-content: space-around; align-items: center; padding: 50px 0 0 0px;}
+      .f_box1 {width: 360px; height: 300px;}
+      .f_box1 h4 {font-size: 20px; font-weight: bold; padding: 10px 8px;  color: white; font-family: 'Montserrat', sans-serif;}
+      .solidline {width: 50px; border-bottom:3px solid #9f1b32 ; margin: 0 0 0 8px;}
+      .f_box1 p {font-size: 15px; color: #ddd; padding: 15px 5px;}
+      .f_box_text h5{font-size: 15px; font-weight: lighter ; color: #ddd; height:25px; padding:10px 5px;  }
+      .f_box_text img {width: 15px; height: 15px; filter: invert(100%);}
+      .sb1_btn {width: 50%;height: 20%;  padding: 12px 10px; box-shadow: 0 0 0 5px #9f1b32 ;
+      border: solid 1px white; border-radius: 1px cursor:pointer;
+      background-color: #9f1b32; color: #fff; font-size: 13px; margin: 20px; cursor: pointer;}
+      .sb1_btn:hover{opacity: 0.9; transition: all 0.3s ease-in-out;}
+
+
+      .insta {width: 360px; height: 200px; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: baseline; align-content: center; }
+      
+      .insta_p img {width: 74px; height: 74px; cursor: pointer; border: 3px solid #292929;}
+      .insta_p img:hover {opacity: 0.7; border: 4px solid #9f1b32; transition: all .20s ease-in-out;}
+      .footer_row {width: 1200px; height: 100px; background-color: #333; margin: 0 auto; border-top:1px dotted gray ;  display: flex; justify-content: space-between; align-items: flex-end; padding: 20px;}
+      .ft_row1 p {font-size:14px; color: #999}
+      .ft_row1 a {font-size:14px; color: #999; text-decoration: underline;}
+      .ft_row1 a:hover{color: #9f1b32;}
+      .ft_row3 {display: flex; justify-content: center; align-items: center; }
+      .ft_row3 li {font-size: 14px; color: #999;}
+      .ft_row3 li img{width: 20px; height: 20px; padding: 2px 2px; filter: invert(55%); cursor: pointer; } 
+      .ft_row3 li img:hover { filter: invert(100%);}
+     }

@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@media (min-width: 600px) and (max-width: 1199px){
+      #wrap {width: 100%; height: auto; }
+    
+      .header_bar {width:100%;  background-color: #9F1B32; position:fixed; top:0; z-index: 100; opacity: 0.9;} 
+      .header_inner {width: 100%; height: auto; margin: 0 auto; padding: 30px; display: flex; flex-direction: column;}
+      .logo {width: 100%; height:30px; display:flex; justify-content: space-around; cursor: pointer; align-items: center; padding: 0 0 10px 0px;}
+      .nav_bar {width:100%; height:auto ; display: none; z-index: 100;}
+      .nav_bar ul {   margin: 20px 0 0 0px; display: flex;flex-direction: column;  align-items:center; }
+      .nav_bar ul li {padding: 15px;  width: 100%; border-bottom: 1px dotted white; text-align: center; }
+      .nav_bar ul li:hover {width: 100%; opacity: 0.7; background-color:black; text-align: center;}
+      .nav_bar a:hover {color: #dfcb8f; transition: all 0.5s; } 
+      .nav_bar ul img {width: 20px; height: 20px; color: white; vertical-align: middle; filter: invert(100%); display: none;}
+      .none_ {display: none;}
+      .button {width:90px; height:35px;  margin:0 0 0 40px; border: 2px solid white; background-color:#9F1B32 ; color: white; padding: 2px 2px; border-radius: 3px 3px; text-align: center; transition: 0.3s; font-size: 13px; line-height: 24px; display: none;}
+      .button:hover {cursor: pointer; opacity: 0.7; background-color: white; color: black; } 
+      .nav_bar_a {width: 35px; height: 30px; display: block;  filter: invert(100%); border: 2px solid ; border-radius: 3px;}
+      .nav_bar_a:hover{cursor: pointer;}
+      .nav_bar ul li a {font-family: 'Montserrat', sans-serif; font-size: 15px;}
+   
+
+    /*--------- footer--------*/
+      footer {width: 100%;  background-color:#333}
+      .footer_top {width:100%; height:auto; background-color: #333; margin: 0 auto; display: flex; 
+         flex-direction: column; padding: 10px 0 0 0px;}
+      .f_box1 {width: 100%; height:auto; padding: 20px 10px;}
+      .f_box1 h4 {font-size: 20px; font-weight: bold; padding: 10px 8px;  color: white; font-family: 'Montserrat', sans-serif;}
+      .solidline {width: 50px; border-bottom:3px solid #9f1b32 ; margin: 0 0 0 8px;}
+      .f_box1 p {font-size: 15px; color: #ddd; padding: 15px 5px; }
+      .f_box_text h5{font-size: 15px; font-weight: lighter ; color: #ddd; height:25px; padding:10px 5px;  }
+      .f_box_text img {width: 15px; height: 15px; filter: invert(100%);}
+
+      .insta {width: 100%; height: 250px; padding: 10px 10px; display: flex; flex-wrap:wrap; }
+      .insta_p {margin: 0px 2px; display: }
+      .insta_p img {width: 100%; height: 90px; cursor: pointer; border: 5px solid #292929; }
+      .insta_p img:hover {opacity: 0.7; border: 4px solid #9f1b32; transition: all .25s ease-in-out;}
+      .footer_row {width: 100%; height: 100px; background-color: #333; margin: 0 auto; border-top:1px dotted gray ;  display: flex; justify-content: space-between; align-items: flex-end; padding: 20px;}
+      .ft_row1 p {font-size:14px; color: #999}
+      .ft_row1 a {font-size:14px; color: #999; text-decoration: underline}
+      .ft_row1 a:hover{color: #9f1b32;}
+      .ft_row3 {display: flex; justify-content: center; align-items: center; }
+      .ft_row3 li {font-size: 14px; color: #999;}
+      .ft_row3 li img{width: 20px; height: 20px; padding: 2px 2px; filter: invert(55%); cursor: pointer; }
+      .ft_row3 li img:hover { filter: invert(100%);} 
+}

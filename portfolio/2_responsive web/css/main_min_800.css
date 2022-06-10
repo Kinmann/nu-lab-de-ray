@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@media (min-width: 800px) and (max-width: 1249px) {
+    /********************************** SLIDER STARTS **********************************/
+
+    /****************** SLIDER_IMG STARTS ******************/
+    #slider {width: 100%; height: 100vh; position: relative; background-color: blue;}
+    .slider_background img {width: 100%; height: 100vh; object-fit: cover; object-position: center; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.3s ease-in-out;}
+    .slider_background img.active {opacity: 1;}
+
+    /****************** SLIDER_TEXTBOX STARTS ******************/
+    .slider_textbox {width: 70vw; height: 350px; position: absolute; top: 50%; left: 50%; margin: -200px 0 0 -35vw; display: flex; flex-flow: row wrap; justify-content: center; align-content: space-between; text-align: center;}
+    .slider_textbox h1 {font-size: 55px; margin: 0 0 20px; }
+    .slider_textbox p {width: 100%;} 
+    .slider_text_buttons {width: 100%; margin: 50px 0 0;display: flex; justify-content: center;}
+    .slider_text_buttons span {width: 150px; height: 50px; text-align: center; line-height: 50px; margin: 0 30px;}
+    .slider_text_buttons .button_black {background-color: black;}
+    .slider_text_buttons .button_black:hover {background-color: red;}
+    .slider_text_buttons .button_white {background-color: white;}
+    .slider_text_buttons .button_white:hover {background-color: red;}
+    .slider_text_buttons .button_white:hover a {color: white;}
+    .slider_text_buttons span a {width: 150px; height: 50px; display: inline-block; font-weight: bold; font-size: 17px;}
+    .slider_text_buttons .button_white a {color: black; }
+
+    /****************** SLIDER_BUTTONS STARTS ******************/
+    .slider_buttons > div {width: 80px; height: 80px; border: 1px solid white; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: absolute; top: 50%; margin: -40px 0 0;}
+    .slider_buttons > div:hover {background-color: red; border-color:red; cursor: pointer;}
+    .slider_buttons_l {left: 30px; }
+    .slider_buttons_l img {margin: 0 6px 0 0;}
+    .slider_buttons_r {right: 30px; }
+    .slider_buttons_r img {margin: 0 0 0 6px;}
+    .slider_buttons img {width: 30px; height: 30px; filter:invert(); }
+
+
+
+    /********************************** SECTION STARTS **********************************/
+    section {width: 100%; background-color: blue; }
+
+    section .link_span {color: black; font-size: 17px; font-weight: bold; }
+    section .link_span a:hover {color: goldenrod;}
+
+    /****************** SUBSCRIBE STARTS ******************/
+    #subscribe {width: 100%; background-color: black; padding: 100px 0; }
+    .subscribe_inner {width: 100%; margin: 0 auto;}
+    .subscribe_inner h2 {width: 100%; text-align: center; font-size: 30px;letter-spacing: -0.03em;}
+    .subscribe_inner .email_input {width: 55%; margin: 50px auto 0; display: flex; justify-content: center; align-items: center; }
+    .email_input input {width: 80%; height: 60px; border: 1px solid white; padding: 10px; font-size: 16px; color: black;}
+    .email_input input:focus {outline: none;}
+    .email_input button {width: 20%; height: 60px; border: 1px solid white; background-color: black; font-size: 15px; font-weight: bold; color: white;}
+    .email_input button:hover {cursor: pointer; background-color: red;}
+
+    /****************** REPRESENTATIVE STARTS ******************/
+    #representative {width: 100%; padding: 100px ; background-color: white;}
+    .representative_inner {max-width: 1250px; margin: 0 auto; display: flex;}
+    .representative_img {width: 50%; padding: 0 3vw 0 0;}
+    .representative_img img {width: 100%;}
+    .representative_text {width: 50%; color: black; padding: 0 0 0 3vw; display: flex; flex-direction: column; justify-content: center;}
+    .representative_text h1 {font-size: 35px; margin: 0 0 50px; }
+    .representative_text P {margin: 0 0 50px;}
+    .representative_text a {color: black; }
+
+    /****************** ABOUT STARTS ******************/
+    #about {width: 100%; padding: 0 0 100px; background-color: white; color: black;}
+    .about_inner {width: 100%; margin: 0 auto;}
+    .about_inner h1 {width: 100%; font-size: 40px; margin: 0 0 50px; padding: 0 0 0 20px;}
+    .about_content_box {width: 100%; display: flex;}
+    .about_content {width: 33.3%; padding: 20px; }
+    .about_content h4 {font-size: 23px; margin: 0 0 20px; }
+    .about_content p {margin: 0 0 20px; }
+    .about_content a {color: black;}
+
+    /****************** PICS_BANNER_1 STARTS ******************/
+    #pics_banner_1 {width: 100%; display: flex; flex-flow: row wrap; justify-content: center;}
+    .pics_banner_1_content {width: 33.3%; position: relative;}
+    .pics_banner_1_content img {width: 100%; vertical-align: bottom; aspect-ratio: 16/9; object-fit: cover;object-position: center;}
+    .pics_banner_1_content:hover {cursor: pointer}
+    .pics_banner_1_content:hover img {opacity: 0.6;}
+    .pics_banner_1_content:hover div {transform: scaleY(1);}
+        
+    .pics_banner_1_text {position: absolute; bottom: 20px; left: 0; z-index: 1; padding: 0 20px; transform: scaleY(0);  transition: all 0.2s ease-in-out;}
+    .pics_banner_1_text h3 {font-size: 2.0vw; margin: 0 0 1.8vw; }
+    .pics_banner_1_text p {font-size: 1.4vw;}
+ 
+    /****************** ARTICLE STARTS ******************/
+    #articles {width: 100%; padding: 100px 0; background-color: white; color: black;}
+    .articles_inner {max-width: 1250px; margin: 0 auto;}
+    .articles_text h1 {text-align: center; margin: 0 0 20px; font-size: 35px; letter-spacing: 0.1em; }
+    .articles_text p {text-align: center; width: 800px; margin: 0 auto 80px; }
+
+    .articles_contentbox {width: 100%; display: flex; justify-content: space-between; padding: 0 10px;}
+    .articles_content {width: 30%;}
+    .articles_content:hover {cursor: pointer;}
+    .articles_content:hover img{transform:scale(1.2);}
+    .articles_img {width: 100%; margin: 0 0 30px; position: relative; overflow: hidden; }
+    .articles_img img {width: 100%; aspect-ratio: 4/3; object-fit: cover; transition: all 0.3s ease-in-out;}
+    .articles_datebox {width: 70px; height: 70px; position: absolute; top: 0; right: 0; background-color: white; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    .articles_datebox h5 {font-size: 23px; }
+    .articles_datebox span {font-size: 14px; }
+    .articles_content h4 {font-size: 22px;}
+
+    /****************** BATTLE STARTS ******************/
+    #battle {width: 100%; height: 870px; background-image: url(../img/main/section/battle_bg_1.jpg); background-size: cover; background-position: center; position: relative; display: flex; flex-direction: column; justify-content: center; align-items: center; align-content: space-between;}
+    #battle h2 {text-align: center; padding: 0 0 200px; font-size: 35px;}
+    .battle_content {width: 80%; display: flex; justify-content: space-between; align-items: center; padding: 0 0 200px;}
+    .battle_attendant {width: 30%;}
+    .battle_attendant h1 {font-size: 4vw; text-align: center;}
+    .battle_attendant p {text-align: center;} 
+    
+    .play_buttonbox {width: 18%; aspect-ratio: 1/1; display: flex; justify-content: center; align-items: center; border: 1px solid white; border-radius: 50%; overflow: hidden;}
+    .vid_play {width: 100%; height: 100%; background-color: transparent; border: none; padding: 0 0 0 1.5vw}
+    .vid_play:hover {cursor: pointer; background-color: white; }
+    .vid_play:hover img {filter: none;}
+    .vid_play img {width: 50%; max-width: 70px; filter: invert();}
+
+    /****************** LIKES STARTS ******************/
+    #likes {width: 100%; padding: 100px 0; background-color: white; color: black; }
+    .likes_inner {max-width: 1250px; margin: 0 auto; display: flex; padding: 0 10px;}
+    .likes_text {width: 50%; padding: 0 100px 0 0;}
+    .likes_text h2 {width: 100%; font-size: 35px; margin: 0 0 30px;}
+
+    .likes_stats {width: 50%; display: flex; flex-direction: column; justify-content: space-between; padding: 30px 0 0; }
+    .likes_bar_base {width: 100%; height: 10px; margin: 13px 0 0; position: relative; background-color: gainsboro; }
+    .likes_bar_rates {width: 91%; height: 10px; background-color: red;}
+    .likes_bar_percents {position: absolute; top: -30px; left: 91%;} 
+
+    /****************** INSTRUCTORS STARTS ******************/
+    #instructors {width: 100%; padding: 100px 0; background-color: white; color: black; }
+    .instructors_inner {max-width: 1250px; margin: 0 auto;}
+    .instructors_inner h1 {font-size: 35px; margin: 0 0 100px; text-align: center;}
+
+    .instructors_contentbox {width: 100%; display: flex; justify-content: space-between;}
+    .instructors_content {width: 23%;}
+    .instructors_img {width: 100%; margin: 0 0 20px; position: relative; }
+    .instructors_img > img {width: 100%;}
+    .instructors_img:hover {cursor: pointer;}
+    .instructors_img:hover .instructors_snsbox {display: block;}
+
+    .instructors_snsbox {display: none; transition: all 0.3s ease-in-out;}
+    .instructors_sns {width: 100%; height: 40px; background-color: black; display: flex; justify-content: center; align-items: center;  position: absolute; bottom: 0; }
+    .instructors_sns img {width: 16px; filter: invert(); margin: 0 15px; }
+    .instructors_sns img:hover {filter:invert(0.5);}
+
+    /****************** EVENTS STARTS ******************/
+    #events {width: 100%; background-color: #1636bf; padding: 130px 0;}
+    .events_inner { margin: 0 auto;}
+    .events_inner h1 {text-align: center; margin: 0 0 100px; font-size: 35px; }
+
+    .events_contentbox {width: 100%; display: flex; flex-flow: row wrap; justify-content: center;}
+    .events_content {width: 33%; text-align: center; display: flex; flex-direction: column; justify-content: flex-start;}
+
+
+    .events_img {width: 100%; position: relative; }
+    .events_img img {width: 100%;  height: 300px; aspect-ratio: 4/3; object-fit: contain; object-position: bottom;}
+    .events_img h2 {position: absolute; top: 50%; left: 50%; margin: -35px 0 0 -75px; width: 150px; height: 70px; text-align: center;}
+
+    /****************** PICS_BANNER_2 STARTS ******************/
+    #pics_banner_2 {width: 100%; display: flex; justify-content: center; }
+    #pics_banner_2 img {width: 100%; vertical-align: bottom;}
+    .pics_banner_2_content {position: relative;}
+    .pics_banner_2_content:hover {cursor: pointer;}
+    .pics_banner_2_content:hover img {opacity: 0.7;}
+    .pics_banner_2_content:hover h1 {transform: scaleY(1);}
+    .pics_banner_2_content h1 {position: absolute; bottom: 42%; left: 0; z-index: 1; padding: 0 20px; transform: scaleY(0);  transition: all 0.2s ease-in-out; text-align: center; width: 100%; font-size: 2.2vw;}
+
+}
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/****** ANIMATIONS ******/
+@keyframes godzilla {
+    0% {transform: translateY(100%) rotateY(180deg); opacity: 0;}
+    50% {transform: translateY(0) rotateY(180deg); opacity: 0.5;}
+    60% {transform: translateY(0) rotateY(180deg); opacity: 1;}
+}
+
+@keyframes ufo-comming {
+    0% {top: 20%; left: 0%; transform: rotate(-27deg) translateX(-100%);}
+    8% {top: 4%; left: 0%; transform: none;}
+    10% {top: 4%; left: 0%; transform: rotate(-27deg) translateX(0);} 
+}
+@keyframes ufo-beaming {
+    0% {opacity: 0;}
+    13.8% {opacity: 0;}
+    14% {opacity: 1;}
+    14.1% {opacity: 0;}
+    14.2% {opacity: 1;}
+    16% {opacity: 1;}
+    16.2% {opacity: 0;}
+    20% {opacity: 1;}
+}
+@keyframes title-neon {
+    0% {text-shadow: none;}
+    18% {text-shadow: none;}
+    18.1% {text-shadow: 0 0 15px yellow;}
+}
+
+@keyframes dancers {
+    0% {transform: scale(0%); bottom: 10%;}
+    10% {transform: scale(0%); bottom: 10%;}
+    20% {transfrom: scale(100%); bottom: 5.6%;}
+    50% {transfrom: scale(100%); bottom: 0;}
+}
