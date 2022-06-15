@@ -1,0 +1,218 @@
+@import url(./style_setting.css);
+
+main {
+    width: 100%;    
+}
+
+.trend {
+    position: relative;
+    .trend_slider_window {
+        width: 100%;
+        aspect-ratio: 2;
+        overflow: hidden;
+        background-color: lightcyan;
+        .trend_slider_wrap {
+            display: flex;
+            height: 100%;
+            li {
+                width: 100%;
+                height: 100%;
+                flex-shrink: 0;
+                position: relative;
+                .trend_slider_img {
+                    width: 100%;
+                    height: 100%;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .trend_slider_text {
+                    width: 30%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 40px;
+                    background-color: rgba(196, 186, 186, 0.623);
+                    .trend_slider_text_btn {
+                        text-align: right;
+                        button {
+                            width: 30%;
+                            aspect-ratio: 2;
+                            font-size: 1.5rem;
+                            font-weight: 700;
+                            border: none;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .trend_slider_btns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        z-index: 10;
+        .trend_slider_btn {
+            width: 50px;
+            height: 50px;
+            z-index: 10;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 6px gray;
+            opacity: 0.9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 50%;
+            }
+        }
+        .left {
+            transform: translateX(-50%);
+            img {
+                transform: translateX(-10%);
+            }
+        }
+        .right {
+            transform: translateX(50%);
+            img {
+                transform: translateX(10%);
+            }
+        }
+    }
+    .trend_slider_dots {
+        ul {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            li {
+                width: 1%;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                margin: 0 5px;
+                background-color: lightgray;
+
+            }
+            li.selected {
+                background-color: darkorange;
+            }
+        }
+    }
+}
+
+.best_photo {
+    .best_photo_content {
+        width: 100%;
+        display: flex;
+        .best_photo_left {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-right: 5%;
+            .best_photo_small {
+                width: 47%;
+                margin-bottom: 5%;
+            }
+            .best_photo_small:nth-of-type(3) {
+                margin-bottom: 0;
+            }
+            .best_photo_small:nth-of-type(4) {
+                margin-bottom: 0;
+            }
+        }
+        .best_photo_right {
+            width: 50%;
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            .best_photo_big {
+                width: 98%;
+            }
+            
+        }
+    }
+
+}
+
+.recommend {
+    .recommend_content_wrap {
+        width: 100%;
+        position: relative;
+        aspect-ratio: 2.5;
+        display: flex;
+        align-items: center;
+        .recommend_bg {
+            width: 35%;
+            height: 100%;
+            position:absolute;
+            top: 0;
+            left:0;
+            background-image: url(https://jeunessetravel.com/wp-content/uploads/jeunesse-travel-video-thumbnail.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+        .recommend_list {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: space-between;
+            >li {
+                width: 24%;
+            }
+            .recommend_theme {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-end;
+                padding: 5% 3%;
+                
+                h2 {
+                    width: 80%;
+                    color: white;
+                    text-shadow: 2px 2px 15px black;
+                }
+                .recommend_theme_list {
+                    width: 80%;
+                    li {
+                        width: 80%;
+                        background-color: orange;
+                        text-align: center;
+                        padding: 1.5%;
+                        margin: 0 auto 5%;
+                        border-radius: 15px;
+                    }
+                }
+            }
+            .recommend_content {
+                background-color: rgba(173, 216, 230, 1);
+                img {
+                    width: 100%;
+                    aspect-ratio: 1.4;
+                    object-fit: cover;
+                    object-position: center;
+                }
+                .recommend_content_text {
+                    p {
+                        margin-bottom: 3%
+                    }
+                }
+
+                
+            }
+
+        }
+    }
+}

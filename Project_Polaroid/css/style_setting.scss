@@ -1,0 +1,126 @@
+.style_menu_font_1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+}
+.style_menu_font_2 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+}
+
+.style_head_1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.style_head_2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.style_head_3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.style_head_3_1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    text-align: left;
+}
+
+.style_text_1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.style_article_text_1{
+    font-size: 1.4rem;
+    color: #333;
+}
+
+
+.wrap {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.wrap_main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.photo_list {
+    aspect-ratio: 0.824;
+    padding: 4%;
+    box-shadow: 2px 2px 9px #cecbcb;
+    img.photo_main {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            width: 17%;
+            text-align: center;
+            padding: 3% 0;
+            img {
+                width: 1.6rem;
+                vertical-align: bottom;
+            }
+            span {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    p {
+        position:relative;
+        bottom:0;
+    }
+}
+.photo_list_big {
+    aspect-ratio: 0.824;
+    padding: 8%;
+    box-shadow: 4px 4px 18px #cecbcb;
+    img.photo_main {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        object-position: center;
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            width: 17%;
+            text-align: center;
+            padding: 3% 0;
+            img {
+                width: 3.4rem;
+                vertical-align: bottom;
+            }
+            span {
+                font-size: 3rem;
+            }
+        }
+    }
+    p {
+        position:relative;
+        bottom:0;
+        font-size: 3rem;
+    }
+}

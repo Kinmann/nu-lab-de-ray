@@ -1,0 +1,158 @@
+.style_menu_font_1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+}
+
+.style_menu_font_2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+}
+
+.style_head_1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.style_head_2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.style_head_3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.style_head_3_1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #333;
+  text-align: left;
+}
+
+.style_text_1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.style_article_text_1 {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+.wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.wrap_main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.photo_list {
+  aspect-ratio: 0.824;
+  padding: 4%;
+  -webkit-box-shadow: 2px 2px 9px #cecbcb;
+          box-shadow: 2px 2px 9px #cecbcb;
+}
+
+.photo_list img.photo_main {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.photo_list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.photo_list ul li {
+  width: 17%;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.photo_list ul li img {
+  width: 1.6rem;
+  vertical-align: bottom;
+}
+
+.photo_list ul li span {
+  font-size: 1.3rem;
+}
+
+.photo_list p {
+  position: relative;
+  bottom: 0;
+}
+
+.photo_list_big {
+  aspect-ratio: 0.824;
+  padding: 8%;
+  -webkit-box-shadow: 4px 4px 18px #cecbcb;
+          box-shadow: 4px 4px 18px #cecbcb;
+}
+
+.photo_list_big img.photo_main {
+  width: 100%;
+  aspect-ratio: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.photo_list_big ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.photo_list_big ul li {
+  width: 17%;
+  text-align: center;
+  padding: 3% 0;
+}
+
+.photo_list_big ul li img {
+  width: 3.4rem;
+  vertical-align: bottom;
+}
+
+.photo_list_big ul li span {
+  font-size: 3rem;
+}
+
+.photo_list_big p {
+  position: relative;
+  bottom: 0;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=style_setting.css.map */

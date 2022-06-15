@@ -1,0 +1,106 @@
+#wrap {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+.nav_top {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    .nav_top_wrap {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px 0;
+        display: flex;
+        .logo {
+            width: 15%;
+            text-align: right;
+            padding: 0 20px;
+            background-color: orange;
+        }
+        nav.category {
+            width: 40%;
+            ul {
+                margin: 0 auto;
+                display: flex;
+                li {
+                    margin-left: 5%;
+                }
+            }
+        }
+        div.my_page {
+            width: 45%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            .search {
+                height: 30px;
+                border: 1px solid gray;
+                padding: 5px 10px;
+                img {
+                    width: 20px;
+                    vertical-align: top;
+                    margin-right: 5px;
+                }
+                input {
+                    font-size: 18px;
+                    border: none;
+                    background-color: transparent;
+                }
+                input:focus {
+                    outline: none;
+                }
+            }
+            .cart {
+                img {
+                    width: 23px;
+                    aspect-ratio: 1;
+                    vertical-align: top;
+                    margin-right: 5px;
+                }
+            }
+            .sign {
+                ul {
+                    display: flex;
+                    li {
+                        font-size: 18px;
+                        padding: 0 5px;
+                        border-right: 1px solid gray;
+                    }
+                    li:last-of-type {
+                        border: none;
+                    }
+                }
+            }
+            .write {
+                font-size: 18px;
+                img {
+                    width: 15px;
+                    vertical-align: middle;
+                }
+                ul {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+.nav_bottom {
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        li {
+            width: 100%;
+            text-align: center;
+            a {
+                display: block;
+            }
+        }
+    }
+}

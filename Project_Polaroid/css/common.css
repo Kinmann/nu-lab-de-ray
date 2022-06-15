@@ -1,0 +1,139 @@
+#wrap {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+.nav_top {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.nav_top .nav_top_wrap {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_top .nav_top_wrap .logo {
+  width: 15%;
+  text-align: right;
+  padding: 0 20px;
+  background-color: orange;
+}
+
+.nav_top .nav_top_wrap nav.category {
+  width: 40%;
+}
+
+.nav_top .nav_top_wrap nav.category ul {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_top .nav_top_wrap nav.category ul li {
+  margin-left: 5%;
+}
+
+.nav_top .nav_top_wrap div.my_page {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav_top .nav_top_wrap div.my_page .search {
+  height: 30px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+}
+
+.nav_top .nav_top_wrap div.my_page .search img {
+  width: 20px;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.nav_top .nav_top_wrap div.my_page .search input {
+  font-size: 18px;
+  border: none;
+  background-color: transparent;
+}
+
+.nav_top .nav_top_wrap div.my_page .search input:focus {
+  outline: none;
+}
+
+.nav_top .nav_top_wrap div.my_page .cart img {
+  width: 23px;
+  aspect-ratio: 1;
+  vertical-align: top;
+  margin-right: 5px;
+}
+
+.nav_top .nav_top_wrap div.my_page .sign ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav_top .nav_top_wrap div.my_page .sign ul li {
+  font-size: 18px;
+  padding: 0 5px;
+  border-right: 1px solid gray;
+}
+
+.nav_top .nav_top_wrap div.my_page .sign ul li:last-of-type {
+  border: none;
+}
+
+.nav_top .nav_top_wrap div.my_page .write {
+  font-size: 18px;
+}
+
+.nav_top .nav_top_wrap div.my_page .write img {
+  width: 15px;
+  vertical-align: middle;
+}
+
+.nav_top .nav_top_wrap div.my_page .write ul {
+  display: none;
+}
+
+.nav_bottom {
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  padding: 10px 0;
+}
+
+.nav_bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav_bottom ul li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav_bottom ul li a {
+  display: block;
+}
+/*# sourceMappingURL=common.css.map */
